@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leads</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          fontFamily: {
+            sans: ["Poppins", "sans-serif"],
+            // body: ["Poppins", "sans-serif"],
+            // mono: ["ui-monospace", "monospace"],
+          },
+          container: {
+            center: true,
+            padding: {
+              DEFAULT: "1rem",
+              sm: "2rem",
+              lg: "4rem",
+              xl: "5rem",
+              "2xl": "6rem",
+            },
+          },
+        },
+        corePlugins: {
+          preflight: false,
+        },
+        safelist: [
+          "animate-[fade-in_1s_ease-in-out]",
+          "animate-[fade-in-down_1s_ease-in-out]",
+        ],
+      };
+    </script>
+  </head>
+  <body class="text-neutral-900">
+    <!-- Main navigation container -->
+    <nav
+      class="fixed w-full top-0 left-0 bg-white z-50 py-4 lg:py-5"
+      data-twe-navbar-ref
+    >
+      <div class="container">
+        <div class="">
+          <!-- Hamburger button for mobile view -->
+          <button
+            class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+            type="button"
+            data-twe-collapse-init
+            data-twe-target="#navbarSupportedContent13"
+            aria-controls="navbarSupportedContent13"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!-- Hamburger icon -->
+            <span
+              class="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </button>
+
+          <!-- Collapsible navbar container -->
+          <div
+            class="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
+            id="navbarSupportedContent13"
+            data-twe-collapse-item
+          >
+            <div class="logo mb-4 lg:mb-0">
+              <a
+                class="flex items-center gap-2 text-xl text-black dark:text-white"
+                href="#"
+                ><img class="h-8 w-auto" src="./images/logo.png" alt="" />
+                <span class="text-xl font-bold text-neutral-900">Leads</span></a
+              >
+            </div>
+            <!-- Center Links -->
+            <ul
+              class="list-style-none lg:flex-1 flex flex-col ps-0 lg:mt-1 lg:flex-row justify-center"
+              data-twe-navbar-nav-ref
+            >
+              <!-- Finances link -->
+              <li class="mb-4 lg:mb-0 mr-2 pr-0 lg:ps-2" data-twe-nav-item-ref>
+                <a
+                  class="text-base font-medium text-neutral-700 transition duration-200 hover:text-neutral-950 hover:ease-in-out active:text-neutral-950 motion-reduce:transition-none"
+                  aria-current="page"
+                  href="#"
+                  data-twe-nav-link-ref
+                  >Finances</a
+                >
+              </li>
+              <!-- Insurance Link -->
+              <li
+                class="mb-4 lg:mb-0 mr-2 pr-0 lg:ps-2"
+                data-twe-nav-item-ref
+                data-twe-animation-init="true"
+                data-twe-animation-reset="true"
+                data-twe-animation="[slide-right_1s_ease-in-out]"
+              >
+                <a
+                  class="text-base font-medium text-neutral-700 transition duration-200 hover:text-neutral-950 hover:ease-in-out active:text-neutral-950 motion-reduce:transition-none"
+                  href="#"
+                  data-twe-nav-link-ref
+                  >Insurance</a
+                >
+              </li>
+              <!-- Diversified link -->
+              <li class="mb-4 lg:mb-0 mr-2 pr-0 lg:ps-2" data-twe-nav-item-ref>
+                <a
+                  class="text-base font-medium text-neutral-700 transition duration-200 hover:text-neutral-950 hover:ease-in-out active:text-neutral-950 motion-reduce:transition-none"
+                  href="#"
+                  data-twe-nav-link-ref
+                  >Diversified</a
+                >
+              </li>
+              <!-- Consultation link -->
+              <li class="mb-4 lg:mb-0 mr-2 pr-0 lg:ps-2" data-twe-nav-item-ref>
+                <a
+                  class="text-base font-medium text-neutral-700 transition duration-200 hover:text-neutral-950 hover:ease-in-out active:text-neutral-950 motion-reduce:transition-none"
+                  href="#"
+                  data-twe-nav-link-ref
+                  >Consultation</a
+                >
+              </li>
+              <!-- News link -->
+              <li class="mb-4 lg:mb-0 mr-2 pr-0 lg:ps-2" data-twe-nav-item-ref>
+                <a
+                  class="text-base font-medium text-neutral-700 transition duration-200 hover:text-neutral-950 hover:ease-in-out active:text-neutral-950 motion-reduce:transition-none"
+                  href="#"
+                  data-twe-nav-link-ref
+                  >News</a
+                >
+              </li>
+            </ul>
+            <button
+              type="button"
+              class="bg-blue-500 text-white rounded-md px-3.5 py-2.5 text-sm font-semibold border border-blue-500 shadow-sm transition hover:bg-white hover:text-blue-500"
+            >
+              Start Comparison
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <div class="hero-section pt-12 lg:pt-28 pb-8 lg:pb-16">
+      <!-- Slider main swiper -->
+      <div class="container">
+        <!--Tabs navigation-->
+        <ul
+          class="mb-5 flex list-none flex-row border-b-0 ps-0"
+          role="tablist"
+          data-twe-nav-ref
+        >
+          <li role="presentation">
+            <a
+              href="#tabs-solar"
+              class="flex gap-2 items-center rounded-full bg-[#FFFFFF66] pl-2 pr-7 mr-3 py-2 text-base font-normal capitalize text-neutral-900 transition hover:bg-blue-100 data-[twe-nav-active]:bg-blue-500 data-[twe-nav-active]:text-white"
+              data-twe-toggle="pill"
+              data-twe-target="#tabs-solar"
+              data-twe-nav-active
+              role="tab"
+              aria-controls="tabs-solar"
+              aria-selected="true"
+            >
+              <img
+                class="w-8 lg:w-12 bg-blue-50 rounded-full isolate p-1"
+                src="images/svg/solarSystem.svg"
+                alt=""
+              />
+              <span>Solar</span>
+            </a>
+          </li>
+          <li role="presentation">
+            <a
+              href="#tabs-heat"
+              class="flex gap-2 items-center rounded-full bg-[#FFFFFF66] pl-2 pr-7 mr-3 py-2 text-base font-normal capitalize text-neutral-900 transition hover:bg-blue-100 data-[twe-nav-active]:bg-blue-500 data-[twe-nav-active]:text-white"
+              data-twe-toggle="pill"
+              data-twe-target="#tabs-heat"
+              role="tab"
+              aria-controls="tabs-heat"
+              aria-selected="false"
+              ><img
+                class="w-8 lg:w-12 bg-blue-50 rounded-full isolate p-1"
+                src="images/svg/HeatPump.svg"
+                alt=""
+              />
+              <span>Heat</span></a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="#tabs-deposits"
+              class="flex gap-2 items-center rounded-full bg-[#FFFFFF66] pl-2 pr-7 mr-3 py-2 text-base font-normal capitalize text-neutral-900 transition hover:bg-blue-100 data-[twe-nav-active]:bg-blue-500 data-[twe-nav-active]:text-white"
+              data-twe-toggle="pill"
+              data-twe-target="#tabs-deposits"
+              role="tab"
+              aria-controls="tabs-deposits"
+              aria-selected="false"
+              ><img
+                class="w-8 lg:w-12 bg-blue-50 rounded-full isolate p-1"
+                src="images/svg/FixedAndDailyDeposits.svg"
+                alt=""
+              />
+              <span>Deposits</span></a
+            >
+          </li>
+        </ul>
+        <div
+          class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+          id="tabs-solar"
+          role="tabpanel"
+          aria-labelledby="tabs-solar-tab"
+          data-twe-tab-active
+        >
+          <div
+            class="flex flex-col md:flex-row justify-between items-start gap-12"
+          >
+            <div class="w-full md:w-1/2 pt-4">
+              <h1
+                class="text-3xl md:text-2xl lg:text-5xl font-bold tracking-tight text-gray-900"
+              >
+                <span class="text-[#FF5323]">Solar Energy</span> is worth it
+                again!
+              </h1>
+              <p
+                class="mt-8 text-pretty leading-relaxed md:leading-loose text-sm md:text-base text-stone-900"
+              >
+                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
+              </p>
+              <div class="mt-10">
+                <a
+                  href="#"
+                  class="bg-blue-500 text-white rounded-full px-7 py-5 text-sm font-semibold border border-blue-500 shadow-sm transition hover:bg-white hover:text-blue-500"
+                  >Start Comparison
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="w-5 h-5 inline-block ml-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div
+              class="w-full md:w-1/3 relative flex justify-start md:justify-end rounded-2xl pb-10"
+            >
+              <!-- Swiper Container -->
+              <div class="swiper hero-swiper w-full static">
+                <!-- Wrapper for slides -->
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="image-wrpper">
+                      <img
+                        class="w-full h-auto object-cover rounded-2xl"
+                        src="./images/solar-01.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-wrpper">
+                      <img
+                        class="w-full h-auto object-cover rounded-2xl"
+                        src="./images/solar-02.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-wrpper">
+                      <img
+                        class="w-full h-auto object-cover rounded-2xl"
+                        src="./images/solar-04.jpeg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination bottom-5"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+          id="tabs-heat"
+          role="tabpanel"
+          aria-labelledby="tabs-heat-tab"
+        >
+          <div class="flex flex-col md:flex-row justify-between gap-12">
+            <div class="w-full md:w-1/2 pt-4">
+              <h1
+                class="text-3xl md:text-2xl lg:text-5xl font-bold tracking-tight text-gray-900"
+              >
+                <span class="text-[#FF5323]">Heat</span> is worth it again!
+              </h1>
+              <p
+                class="mt-8 text-pretty leading-relaxed md:leading-loose text-sm md:text-base text-stone-900"
+              >
+                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
+              </p>
+              <div class="mt-10">
+                <a
+                  href="#"
+                  class="bg-blue-500 text-white rounded-full px-7 py-5 text-sm font-semibold border border-blue-500 shadow-sm transition hover:bg-white hover:text-blue-500"
+                  >Start Comparison
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="w-5 h-5 inline-block ml-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div
+              class="w-full md:w-1/3 relative flex justify-start md:justify-end rounded-2xl pb-10"
+            >
+              <!-- Swiper Container -->
+              <div class="swiper hero-swiper w-full static">
+                <!-- Wrapper for slides -->
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="image-wrpper">
+                      <img
+                        class="w-full h-auto object-cover rounded-2xl"
+                        src="./images/heat-01.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-wrpper">
+                      <img
+                        class="w-full h-auto object-cover rounded-2xl"
+                        src="./images/heat-02.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-wrpper">
+                      <img
+                        class="w-full h-auto object-cover rounded-2xl"
+                        src="./images/heat-03.jpeg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination bottom-5"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+          id="tabs-deposits"
+          role="tabpanel"
+          aria-labelledby="tabs-deposits-tab"
+        >
+          Tab 3 content
+        </div>
+      </div>
+    </div>
+
+    <!-- trust -->
+    <div class="trust bg-white py-16">
+      <div class="container">
+        <h2 class="text-2xl md:text-4xl font-semibold text-neutral-900 mb-8">
+          <span class="text-blue-500">Focusing on Quality,</span> we maintain
+          customer trust
+        </h2>
+        <div class="w-full lg:w-3/4">
+          <p
+            class="text-base lg:text-xl font-normal text-gray-500 leading-relaxed lg:leading-loose text-pretty mb-8"
+          >
+            We ensure that every facility we build undergoes rigorous quality
+            checks. Sustainable solutions for a green and renewable future.
+          </p>
+        </div>
+        <div
+          class="trust-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-24 gap-y-12 mb-8"
+        >
+          <div class="trust-card">
+            <img class="mb-4" src="./images/svg/Expertise.svg" alt="" />
+            <h3 class="text-2xl font-medium capitalize mb-4">Expertise</h3>
+            <p
+              class="text-sm lg:text-base font-normal text-gray-500 leading-relaxed text-pretty"
+            >
+              Since 1998, over 8 million people have compared smartly with us,
+              changed quickly and saved a lot of money.
+            </p>
+          </div>
+          <div class="trust-card">
+            <img class="mb-4" src="./images/svg/Reliable.svg" alt="" />
+            <h3 class="text-2xl font-medium capitalize mb-4">Reliable</h3>
+            <p
+              class="text-sm lg:text-base font-normal text-gray-500 leading-relaxed text-pretty"
+            >
+              With us you can rely on current tariff offers and our
+              award-winning customer service.
+            </p>
+          </div>
+          <div class="trust-card">
+            <img class="mb-4" src="./images/svg/Transparent.svg" alt="" />
+            <h3 class="text-2xl font-medium capitalize mb-4">Transparent</h3>
+            <p
+              class="text-sm lg:text-base font-normal text-gray-500 leading-relaxed text-pretty"
+            >
+              With us, you can compare for free, as we also finance ourselves
+              through commissions. We are 100 percent independent.
+            </p>
+          </div>
+        </div>
+        <p class="text-xl font-medium text-neutral-900 text-center">
+          With the trust of <strong>8 million</strong> customers, your success
+          is <strong>guaranteed at 98%!</strong>
+        </p>
+      </div>
+    </div>
+
+    <!-- Comparison  -->
+    <div class="comparison bg-zinc-100 py-16">
+      <div class="container">
+        <div class="text-center mb-8">
+          <h2 class="text-2xl md:text-4xl font-semibold text-neutral-900 mb-4">
+            Comparison options at a glance
+          </h2>
+          <p
+            class="text-base lg:text-xl font-normal text-gray-500 text-pretty leading-relaxed lg:leading-loose mb-8"
+          >
+            Explore available solutions and compare options to find the best
+            easily
+          </p>
+        </div>
+        <div class="options grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div class="compare-option bg-white p-8 rounded-lg shadow-lg">
+            <img src="./images/svg/solarSystem.svg" alt="" />
+            <h3 class="text-2xl font-medium capitalize mb-4">Solar System</h3>
+            <p
+              class="text-sm font-normal text-gray-500 leading-relaxed text-pretty mb-4"
+            >
+              Discover the best home solar solutions and attractive finance
+              opportunities with Leads.
+            </p>
+            <ul class="list-style-none mb-4">
+              <li class="pl-12 mb-2">No contribution obligation.</li>
+              <li class="pl-12 mb-2">No contribution obligation.</li>
+            </ul>
+            <div>
+              <button
+                class="rounded-full bg-white text-blue-500 border border-blue-500 px-3.5 py-2.5 text-sm font-semibold shadow-sm transition hover:bg-blue-500 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Start Comparison
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-5 h-5 inline-block ml-1"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="compare-option bg-white p-8 rounded-lg shadow-lg">
+            <img src="./images/svg/HeatPump.svg" alt="" />
+            <h3 class="text-2xl font-medium capitalize mb-4">Heat Pump</h3>
+            <p
+              class="ttext-pretty text-xs md:text-sm leading-relaxed text-gray-500 mb-4"
+            >
+              Discover home heat pump solutions and attractive finance
+              opportunities with Leads.
+            </p>
+            <ul class="list-style-none mb-4">
+              <li class="pl-12 mb-2">No contribution obligation.</li>
+              <li class="pl-12 mb-2">No contribution obligation.</li>
+            </ul>
+            <div>
+              <button
+                class="rounded-full bg-white text-blue-500 border border-blue-500 px-3.5 py-2.5 text-sm font-semibold shadow-sm transition hover:bg-blue-500 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Start Comparison
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-5 h-5 inline-block ml-1"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="compare-option bg-white p-8 rounded-lg shadow-lg">
+            <img src="./images/svg/HealthInsurance.svg" alt="" />
+            <h3 class="text-2xl font-medium capitalize mb-4">
+              Health Insurance
+            </h3>
+            <p
+              class="ttext-pretty text-xs md:text-sm leading-relaxed text-gray-500 mb-4"
+            >
+              Enjoy world-class healthcare with private health insurance
+              tailored to Leads.
+            </p>
+            <ul class="list-style-none mb-4">
+              <li class="pl-12 mb-2">No contribution obligation.</li>
+              <li class="pl-12 mb-2">No contribution obligation.</li>
+            </ul>
+            <div>
+              <button
+                class="rounded-full bg-white text-blue-500 border border-blue-500 px-3.5 py-2.5 text-sm font-semibold shadow-sm transition hover:bg-blue-500 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Start Comparison
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-5 h-5 inline-block ml-1"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="compare-option bg-white p-8 rounded-lg shadow-lg">
+            <img src="./images/svg/FixedAndDailyDeposits.svg" alt="" />
+            <h3 class="text-2xl font-medium capitalize mb-4">
+              Fixed And Daily Deposits
+            </h3>
+            <p
+              class="ttext-pretty text-xs md:text-sm leading-relaxed text-gray-500 mb-4"
+            >
+              Make an informed decision with Leads and ensure a secure and
+              financially stable future today.
+            </p>
+            <ul class="list-style-none mb-4">
+              <li class="pl-12 mb-2">No contribution obligation.</li>
+              <li class="pl-12 mb-2">No contribution obligation.</li>
+            </ul>
+            <div>
+              <button
+                class="rounded-full bg-white text-blue-500 border border-blue-500 px-3.5 py-2.5 text-sm font-semibold shadow-sm transition hover:bg-blue-500 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Start Comparison
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-5 h-5 inline-block ml-1"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- partners -->
+    <div class="partners bg-blue-50 mt-16 py-16">
+      <div class="container">
+        <h2
+          class="text-2xl md:text-4xl font-semibold text-neutral-900 mb-8 text-center"
+        >
+          Our partners
+        </h2>
+        <div class="swiper partners-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide flex justify-center">
+              <img src="./images/partners/Card 1.png" alt="" />
+            </div>
+            <div class="swiper-slide flex justify-center">
+              <img src="./images/partners/Card 2.png" alt="" />
+            </div>
+            <div class="swiper-slide flex justify-center">
+              <img src="./images/partners/Card 4.png" alt="" />
+            </div>
+            <div class="swiper-slide flex justify-center">
+              <img src="./images/partners/Card 5.png" alt="" />
+            </div>
+            <div class="swiper-slide flex justify-center">
+              <img src="./images/partners/Card 6.png" alt="" />
+            </div>
+            <div class="swiper-slide flex justify-center">
+              <img src="./images/partners/Card 7.png" alt="" />
+            </div>
+            <div class="swiper-slide flex justify-center">
+              <img src="./images/partners/Card 8.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- experts -->
+    <div class="experts py-16">
+      <div class="container flex flex-col md:flex-row gap-10 lg:gap-20">
+        <div class="w-full md:w-1/2">
+          <h2 class="text-2xl md:text-4xl font-semibold text-blue-500 mb-8">
+            Just a few steps to get expert advice
+          </h2>
+          <p
+            class="text-base lg:text-xl font-normal text-gray-500 text-pretty leading-relaxed lg:leading-loose mb-8"
+          >
+            Define your needs Book a personal consultation with Leads to get the
+            best solutions easily.
+          </p>
+          <div class="advice-steps grid grid-cols-2 gap-4">
+            <div class="step h-32 lg:h-40 p-2 lg:p-4 border-2 rounded-xl">
+              <div class="flex justify-between items-center mb-4">
+                <img src="./images/svg/expert-01.svg" alt="" />
+                <h3 class="text-2xl font-medium text-gray-400">01</h3>
+              </div>
+              <p
+                class="text-sm lg:text-base leading-normal lg:leading-loose text-neutral-900 text-pretty"
+              >
+                Define your needs and get the best solutions easily.
+              </p>
+            </div>
+            <div class="step h-32 lg:h-40 p-2 lg:p-4 border-2 rounded-xl">
+              <div class="flex justify-between items-center mb-4">
+                <img src="./images/svg/expert-02.svg" alt="" />
+                <h3 class="text-2xl font-medium text-gray-400">02</h3>
+              </div>
+              <p
+                class="text-sm lg:text-base leading-normal lg:leading-loose text-neutral-900 text-pretty"
+              >
+                Select the desired date for the callback
+              </p>
+            </div>
+            <div class="step h-32 lg:h-40 p-2 lg:p-4 border-2 rounded-xl">
+              <div class="flex justify-between items-center mb-4">
+                <img src="./images/svg/expert-03.svg" alt="" />
+                <h3 class="text-2xl font-medium text-gray-400">03</h3>
+              </div>
+              <p
+                class="text-sm lg:text-base leading-relaxed lg:leading-loose text-neutral-900 text-pretty"
+              >
+                Personal advice from an expert
+              </p>
+            </div>
+            <div class="step h-32 lg:h-40 p-2 lg:p-4 border-2 rounded-xl">
+              <div class="flex justify-between items-center mb-4">
+                <img src="./images/svg/expert-04.svg" alt="" />
+                <h3 class="text-2xl font-medium text-gray-400">04</h3>
+              </div>
+              <p
+                class="text-sm lg:text-base leading-relaxed lg:leading-loose text-neutral-900 text-pretty"
+              >
+                Identify personal needs online
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2">
+          <img
+            class="w-full aspect-auto lg:aspect-square bg-gray-100 object-cover rounded-2xl"
+            src="./images//expert.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- leads -->
+    <div class="leads py-16">
+      <div class="container flex flex-col md:flex-row gap-y-10 gap-x-20">
+        <div class="leads-info w-full md:w-1/2">
+          <h2 class="text-2xl md:text-4xl font-semibold text-neutral-900 mb-8">
+            Leads: Smart, personal and reliably affordable.
+          </h2>
+          <p
+            class="text-base lg:text-xl font-normal text-gray-500 text-pretty leading-relaxed lg:leading-loose mb-8"
+          >
+            With us you will find the best insurance, financing and investment
+            that is perfectly tailored to your needs. Our experts compare the
+            best offers on the market for you an d support you in your decision.
+          </p>
+        </div>
+        <div class="leads-features w-full md:w-1/2">
+          <div class="flex flex-col items-start md:items-center">
+            <ul class="list-style-none mb-6">
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  class="w-10 h-10 inline-block mr-2"
+                >
+                  <circle cx="12" cy="12" r="9" fill="green" />
+                  <path
+                    fill="none"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+                <span class="text-lg text-neutral-900"
+                  >100% free and non-binding</span
+                >
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  class="w-10 h-10 inline-block mr-2"
+                >
+                  <circle cx="12" cy="12" r="9" fill="green" />
+                  <path
+                    fill="none"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+                <span class="text-lg text-neutral-900"
+                  >No contribution obligation.</span
+                >
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  class="w-10 h-10 inline-block mr-2"
+                >
+                  <circle cx="12" cy="12" r="9" fill="green" />
+                  <path
+                    fill="none"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+                <span class="text-lg text-neutral-900"
+                  >Without obligation to contribute.</span
+                >
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  class="w-10 h-10 inline-block mr-2"
+                >
+                  <circle cx="12" cy="12" r="9" fill="green" />
+                  <path
+                    fill="none"
+                    stroke="white"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+                <span class="text-lg text-neutral-900"
+                  >Expert advice by telephone.</span
+                >
+              </li>
+            </ul>
+            <img class="" src="./images//leads-features.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tedtimonials -->
+    <div class="tedtimonials relative bg-white py-16">
+      <div class="container md:mr-0 md:pr-0">
+        <h2
+          class="text-2xl md:text-4xl font-semibold text-neutral-900 mb-8 text-center"
+        >
+          What do the users say?
+        </h2>
+        <div class="swiper testimonials-swiper w-full static">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="testimonial-card bg-gray-100 p-8 rounded-2xl shadow-lg"
+              >
+                <h5
+                  class="text-base font-semibold text-neutral-900 capitalize mb-3"
+                >
+                  Great service
+                </h5>
+                <p
+                  class="text-base text-neutral-600 font-normal line-clamp-3 mb-3"
+                >
+                  With Leads, I had easy, personalized private health insurance,
+                  and was well taken care of.
+                </p>
+                <div class="rating flex justify-start gap-x-2">
+                  <ul class="mb-7 flex justify-start">
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="h-5 w-5 text-orange-400"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="h-5 w-5 text-orange-400"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="h-5 w-5 text-orange-400"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="h-5 w-5 text-orange-400"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg
+                        clip-rule="evenodd"
+                        fill-rule="evenodd"
+                        fill="currentColor"
+                        class="h-5 w-5 text-orange-400"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="2"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44zm.678 2.033v11.904l4.707 2.505-.951-5.236 3.851-3.662-5.314-.756z"
+                          fill-rule="nonzero"
+                        />
+                      </svg>
+                    </li>
+                  </ul>
+                  <p class="text-base text-neutral-900 font-semibold">4.2</p>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div>
+                    <p class="text-sm text-neutral-900 font-medium mb-2">
+                      Sabine M
+                    </p>
+                    <p class="text-xs text-gray-500 font-normal">
+                      42 Jahre alt, aus Berlin
+                    </p>
+                  </div>
+                  <img src="/images/svg/quote.svg" alt="quote icon" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="testimonial-card bg-gray-100 p-8 rounded-2xl shadow-lg"
+              >
+                <h5
+                  class="text-base font-semibold text-neutral-900 capitalize mb-3"
+                >
+                  Great service
+                </h5>
+                <p
+                  class="text-base text-neutral-600 font-normal line-clamp-3 mb-3"
+                >
+                  With Leads, I had easy, personalized private health insurance,
+                  and was well taken care of.
+                </p>
+                <div class="rating flex justify-start gap-x-2">
+                  <ul class="mb-7 flex justify-start">
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="h-5 w-5 text-orange-400"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="h-5 w-5 text-orange-400"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="h-5 w-5 text-orange-400"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="h-5 w-5 text-orange-400"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg
+                        clip-rule="evenodd"
+                        fill-rule="evenodd"
+                        fill="currentColor"
+                        class="h-5 w-5 text-orange-400"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="2"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44zm.678 2.033v11.904l4.707 2.505-.951-5.236 3.851-3.662-5.314-.756z"
+                          fill-rule="nonzero"
+                        />
+                      </svg>
+                    </li>
+                  </ul>
+                  <p class="text-base text-neutral-900 font-semibold">4.2</p>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div>
+                    <p class="text-sm text-neutral-900 font-medium mb-2">
+                      Sabine M
+                    </p>
+                    <p class="text-xs text-gray-500 font-normal">
+                      42 Jahre alt, aus Berlin
+                    </p>
+                  </div>
+                  <img src="/images/svg/quote.svg" alt="quote icon" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="testimonial-card bg-gray-100 p-8 rounded-2xl shadow-lg"
+              >
+                <h5
+                  class="text-base font-semibold text-neutral-900 capitalize mb-3"
+                >
+                  Great service
+                </h5>
+                <p
+                  class="text-base text-neutral-600 font-normal line-clamp-3 mb-3"
+                >
+                  With Leads, I had easy, personalized private health insurance,
+                  and was well taken care of.
+                </p>
+                <div class="rating flex justify-start gap-x-2">
+                  <ul class="mb-7 flex justify-start">
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="h-5 w-5 text-orange-400"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="h-5 w-5 text-orange-400"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="h-5 w-5 text-orange-400"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="h-5 w-5 text-orange-400"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg
+                        clip-rule="evenodd"
+                        fill-rule="evenodd"
+                        fill="currentColor"
+                        class="h-5 w-5 text-orange-400"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="2"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44zm.678 2.033v11.904l4.707 2.505-.951-5.236 3.851-3.662-5.314-.756z"
+                          fill-rule="nonzero"
+                        />
+                      </svg>
+                    </li>
+                  </ul>
+                  <p class="text-base text-neutral-900 font-semibold">4.2</p>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div>
+                    <p class="text-sm text-neutral-900 font-medium mb-2">
+                      Sabine M
+                    </p>
+                    <p class="text-xs text-gray-500 font-normal">
+                      42 Jahre alt, aus Berlin
+                    </p>
+                  </div>
+                  <img src="/images/svg/quote.svg" alt="quote icon" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="testimonial-card bg-gray-100 p-8 rounded-2xl shadow-lg"
+              >
+                <h5
+                  class="text-base font-semibold text-neutral-900 capitalize mb-3"
+                >
+                  Great service
+                </h5>
+                <p
+                  class="text-base text-neutral-600 font-normal line-clamp-3 mb-3"
+                >
+                  With Leads, I had easy, personalized private health insurance,
+                  and was well taken care of.
+                </p>
+                <div class="rating flex justify-start gap-x-2">
+                  <ul class="mb-7 flex justify-start">
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="h-5 w-5 text-orange-400"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="h-5 w-5 text-orange-400"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="h-5 w-5 text-orange-400"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="h-5 w-5 text-orange-400"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg
+                        clip-rule="evenodd"
+                        fill-rule="evenodd"
+                        fill="currentColor"
+                        class="h-5 w-5 text-orange-400"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="2"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44zm.678 2.033v11.904l4.707 2.505-.951-5.236 3.851-3.662-5.314-.756z"
+                          fill-rule="nonzero"
+                        />
+                      </svg>
+                    </li>
+                  </ul>
+                  <p class="text-base text-neutral-900 font-semibold">4.2</p>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div>
+                    <p class="text-sm text-neutral-900 font-medium mb-2">
+                      Sabine M
+                    </p>
+                    <p class="text-xs text-gray-500 font-normal">
+                      42 Jahre alt, aus Berlin
+                    </p>
+                  </div>
+                  <img src="/images/svg/quote.svg" alt="quote icon" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Counter -->
+          <div class="absolute bottom-7 left-1/2 -translate-x-1/2">
+            <span class="current-slide"></span> /
+            <span class="total-slides"></span>
+          </div>
+          <!-- Navigation -->
+          <div class="swiper-navigation">
+            <div class="swiper-button-next"></div>
+            <!-- Scrollbar -->
+            <div class="swiper-scrollbar"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Consultant -->
+    <div class="consultant bg-white py-16">
+      <div class="container">
+        <div class="flex justify-between mb-8">
+          <h2 class="text-2xl md:text-4xl font-semibold text-neutral-900">
+            Present Consultant
+          </h2>
+          <button
+            class="bg-transparent rounded-full px-5 py-2 lgLpx-7 lg:py-3 border transition hover:bg-blue-50 capitalize"
+          >
+            Browse All
+          </button>
+        </div>
+        <div
+          class="consultant-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          <div
+            class="consultant-card relative h-[530px] rounded-2xl overflow-hidden"
+          >
+            <img
+              class="absolute top-0 left-0 w-full h-full"
+              src="./images/consultant-01.png"
+              alt="consultant image"
+            />
+            <div
+              class="absolute top-4 right-4 w-10 h-10 bg-zinc-100 rounded-full flex justify-center items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.8"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </div>
+
+            <div
+              class="card-text absolute bottom-0 left-0 w-full p-6 bg-gradient-to-b from-transparent to-neutral-900"
+            >
+              <h4 class="text-2xl font-semibold text-white mb-2">
+                What is health insurance?
+              </h4>
+              <p class="text-base font-normal text-gray-300">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div
+            class="consultant-card relative h-[530px] rounded-2xl overflow-hidden"
+          >
+            <img
+              class="absolute top-0 left-0 w-full h-full"
+              src="./images/consultant-02.png"
+              alt="consultant image"
+            />
+            <div
+              class="absolute top-4 right-4 w-10 h-10 bg-zinc-100 rounded-full flex justify-center items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.8"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </div>
+
+            <div
+              class="card-text absolute bottom-0 left-0 w-full p-6 bg-gradient-to-b from-transparent to-neutral-900"
+            >
+              <h4 class="text-2xl font-semibold text-white mb-2">
+                Is solar energy economical?
+              </h4>
+              <p class="text-base font-normal text-gray-300">
+                With Leads, I had easy, personalized private health insurance,
+                and was well taken care of.
+              </p>
+            </div>
+          </div>
+          <div
+            class="consultant-card relative h-[530px] rounded-2xl overflow-hidden"
+          >
+            <img
+              class="absolute top-0 left-0 w-full h-full"
+              src="./images/consultant-03.png"
+              alt="consultant image"
+            />
+            <div
+              class="absolute top-4 right-4 w-10 h-10 bg-zinc-100 rounded-full flex justify-center items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.8"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </div>
+
+            <div
+              class="card-text absolute bottom-0 left-0 w-full p-6 bg-gradient-to-b from-transparent to-neutral-900"
+            >
+              <h4 class="text-2xl font-semibold text-white mb-2">
+                How safe is fixed deposit?
+              </h4>
+              <p class="text-base font-normal text-gray-300">
+                With Leads, I had easy, personalized private health insurance,
+                and was well taken care of.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
+    <!-- <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll("[data-twe-toggle='pill']"); // جميع التبويبات
+        const tabPanels = document.querySelectorAll("[role='tabpanel']"); // جميع محتويات التبويبات
+        let currentTabIndex = 0; // التبويب الأول
+        const intervalTime = 3000; // زمن التبديل (3 ثواني)
+
+        function switchTab(index) {
+          // إلغاء التفعيل لجميع التبويبات ومحتوياتها
+          tabs.forEach((tab, i) => {
+            const target = document.querySelector(
+              tab.getAttribute("data-twe-target")
+            );
+            const isActive = i === index;
+
+            // تحديث التبويب العلوي
+            tab.setAttribute("aria-selected", isActive ? "true" : "false");
+            isActive ? tab.classList.toggle("data-[twe-nav-active]") : null;
+
+            // تحديث المحتوى المرتبط
+            if (target) {
+              target.classList.toggle("hidden", !isActive);
+              target.classList.toggle("opacity-100", isActive);
+              target.classList.toggle("opacity-0", !isActive);
+            }
+          });
+        }
+
+        function autoSwitchTabs() {
+          currentTabIndex = (currentTabIndex + 1) % tabs.length; // الانتقال للتبويب التالي
+          switchTab(currentTabIndex);
+        }
+
+        // تفعيل تبديل التبويبات تلقائيًا
+        const interval = setInterval(autoSwitchTabs, intervalTime);
+
+        // السماح بالتفاعل اليدوي
+        tabs.forEach((tab, index) => {
+          tab.addEventListener("click", () => {
+            clearInterval(interval); // إيقاف التبديل التلقائي
+            currentTabIndex = index; // تحديث التبويب الحالي
+            switchTab(index); // تغيير التبويب والمحتوى
+          });
+        });
+
+        // تفعيل التبويب الأول عند التحميل
+        switchTab(currentTabIndex);
+      });
+    </script> -->
+  </body>
+</html>
