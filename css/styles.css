@@ -16,10 +16,9 @@ body {
   max-width: 100% !important;
 }
 
-/* hero Section */
+/* Hero */
 .hero-section {
   position: relative;
-  /* height: calc(100vh - 5rem); */
   background-image: url("../images/backgrounds/hero-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -64,11 +63,6 @@ body {
   background-color: var(--main-color);
   border-color: var(--main-color);
 }
-@media (max-width: 768px) {
-  .hero-section {
-    height: auto;
-  }
-}
 
 /* Trust */
 
@@ -85,22 +79,28 @@ body {
   height: 28px;
 }
 
-/* leads */
+/* Leads */
 .leads {
   background-image: url("../images/backgrounds/leads-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+.leads ul li {
+  position: relative;
+}
+.leads ul li::before {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"><g transform="scale(0.7) translate(5,5)"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></g></svg>');
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: green;
+}
 
-/* testi */
-/* .testimonials-swiper .swiper-button-next,
-.testimonials-swiper .swiper-button-prev {
-  top: unset;
-  bottom: -10% !important;
-  left: 50%;
-  transform: translateX(-50%);
-} */
+/* Tedtimonials */
 .swiper-navigation {
   position: absolute;
   width: auto;
@@ -110,13 +110,13 @@ body {
 }
 .swiper-button-next,
 .swiper-button-prev {
-  color: black;
+  color: #171717;
   width: 30px;
   height: 30px;
 }
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 20px;
+  font-size: 16px;
 }
 .swiper-button-next {
   right: unset;
@@ -126,16 +126,10 @@ body {
   left: unset;
   right: 55px;
 }
-
 .swiper-scrollbar {
   background-color: #ddd;
   width: 100px !important;
   height: 8px;
   left: 50% !important;
   transform: translateX(-50%);
-}
-
-.slider-counter {
-  font-size: 14px;
-  color: #333;
 }

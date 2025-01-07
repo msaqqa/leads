@@ -12,9 +12,10 @@
 //   }
 // });
 
+// Initialize the Hero Swiper
 const heroSwiper = new Swiper(".hero-swiper", {
   slidesPerView: 1,
-  // spaceBetween: 10,
+  spaceBetween: 10,
   loop: true,
   autoplay: {
     delay: 3000,
@@ -33,8 +34,8 @@ const partnersSwiper = new Swiper(".partners-swiper", {
   grabCursor: true,
   loop: true,
   autoplay: {
-    delay: 3000, // Time between slides (in milliseconds)
-    disableOnInteraction: false, // Keeps autoplay running after user interaction
+    delay: 3000,
+    disableOnInteraction: false,
   },
   breakpoints: {
     320: {
@@ -50,7 +51,7 @@ const partnersSwiper = new Swiper(".partners-swiper", {
       spaceBetween: 30,
     },
     992: {
-      slidesPerView: 7,
+      slidesPerView: 8,
       spaceBetween: 0,
     },
   },
@@ -66,10 +67,6 @@ const testimonialsSwiper = new Swiper(".testimonials-swiper", {
   spaceBetween: 10,
   grabCursor: true,
   loop: false,
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
-  // },
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -81,7 +78,7 @@ const testimonialsSwiper = new Swiper(".testimonials-swiper", {
     },
     768: {
       slidesPerView: 3.2,
-      spaceBetween: 30,
+      spaceBetween: 20,
     },
   },
   navigation: {
