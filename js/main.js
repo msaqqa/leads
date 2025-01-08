@@ -1,17 +1,3 @@
-// window.addEventListener("load", function () {
-//   const preloader = document.getElementById("preloader");
-
-//   if (preloader) {
-//     preloader.style.transition = "opacity 0.5s ease"; // Adjust duration as needed
-//     preloader.style.opacity = 0;
-
-//     // Wait for the transition to complete before removing the element
-//     setTimeout(() => {
-//       preloader.remove();
-//     }, 500); // Match this duration with the CSS transition
-//   }
-// });
-
 // Initialize the Hero Swiper
 const heroSwiper = new Swiper(".hero-swiper", {
   slidesPerView: 1,
@@ -25,6 +11,56 @@ const heroSwiper = new Swiper(".hero-swiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+});
+// Toggle Between Tabs in Hero Section
+document.addEventListener("DOMContentLoaded", () => {
+  const categoriesTabs = document.getElementById("categoriesTabs");
+  if (!categoriesTabs) return;
+
+  const tabs = categoriesTabs.querySelectorAll("[data-twe-toggle='pill']");
+  let currentIndex = 0;
+  let intervalId;
+
+  const switchTab = (index) => {
+    tabs.forEach((tab, i) => {
+      const targetContent = document.querySelector(
+        tab.getAttribute("data-twe-target")
+      );
+      if (i === index) {
+        tab.setAttribute("data-twe-nav-active", "");
+        tab.setAttribute("aria-selected", "true");
+        targetContent.setAttribute("data-twe-tab-active", "");
+        targetContent.classList.remove("hidden", "opacity-0");
+        targetContent.classList.add("opacity-100");
+      } else {
+        tab.removeAttribute("data-twe-nav-active");
+        tab.setAttribute("aria-selected", "false");
+        targetContent.removeAttribute("data-twe-tab-active");
+        targetContent.classList.add("hidden", "opacity-0");
+        targetContent.classList.remove("opacity-100");
+      }
+    });
+  };
+
+  const startAutoSwitch = () => {
+    intervalId = setInterval(() => {
+      currentIndex = (currentIndex + 1) % tabs.length;
+      switchTab(currentIndex);
+    }, 10000); // 30 seconds
+  };
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => {
+      clearInterval(intervalId); // Stop auto-switching
+      currentIndex = index;
+      switchTab(currentIndex);
+      startAutoSwitch(); // Restart auto-switching after a delay
+    });
+  });
+
+  // Initialize
+  switchTab(currentIndex);
+  startAutoSwitch();
 });
 
 // Initialize the Partners Swiper
@@ -50,9 +86,9 @@ const partnersSwiper = new Swiper(".partners-swiper", {
       slidesPerView: 5,
       spaceBetween: 30,
     },
-    992: {
+    1024: {
       slidesPerView: 8,
-      spaceBetween: 0,
+      spaceBetween: 25,
     },
   },
   navigation: {

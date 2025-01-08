@@ -79,6 +79,8 @@ body {
   height: 28px;
 }
 
+/* Partners */
+
 /* Leads */
 .leads {
   background-image: url("../images/backgrounds/leads-bg.png");
@@ -133,3 +135,9 @@ body {
   left: 50% !important;
   transform: translateX(-50%);
 }
+
+/* Consultant */
+
+/* News */
+
+/* Questions */
