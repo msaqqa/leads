@@ -1,6 +1,26 @@
+// Navigation
+// Add Shadow for Navbar after Scrolling Hero Height
+document.addEventListener("DOMContentLoaded", () => {
+  const navbar = document.getElementById("navbar");
+  const hero = document.getElementById("hero");
+
+  window.addEventListener("scroll", () => {
+    const scrollPosition = window.scrollY;
+    const heroHeight = hero
+      ? hero.offsetHeight - navbar.offsetHeight
+      : navbar.offsetHeight;
+
+    if (scrollPosition > heroHeight) {
+      navbar.classList.add("shadow-lg");
+    } else {
+      navbar.classList.remove("shadow-lg");
+    }
+  });
+});
+
+// Hero
 // Store the Initialized Sliders Hero Section
 const swiperInstances = {};
-
 // Initialize Swiper and Store it if it is not Initialized
 const initializeSwiper = (selector, swiperName) => {
   if (!swiperInstances[swiperName]) {
@@ -75,19 +95,19 @@ document.addEventListener("DOMContentLoaded", () => {
     intervalId = setInterval(() => {
       currentIndex = (currentIndex + 1) % tabs.length;
       switchTab(currentIndex);
-    }, 30000); // 30 ثانية
+    }, 30000); // 30 seconds
   };
 
   tabs.forEach((tab, index) => {
     tab.addEventListener("click", () => {
-      clearInterval(intervalId); // إيقاف التبديل التلقائي
+      clearInterval(intervalId); // Stop Auto Switching
       currentIndex = index;
       switchTab(currentIndex);
-      startAutoSwitch(); // إعادة تشغيل التبديل التلقائي
+      startAutoSwitch(); // Restart Auto Switch
     });
   });
 
-  // تهيئة أول تبويب عند التحميل
+  // Initialize the First Tab when Page Loading
   switchTab(currentIndex);
   startAutoSwitch();
 });
@@ -173,3 +193,42 @@ function updateSliderCounter(swiper) {
   document.querySelector(".current-slide").textContent = currentSlide;
   document.querySelector(".total-slides").textContent = totalSlides;
 }
+
+// Testimonials
+// Function to render the rating
+document.addEventListener("DOMContentLoaded", () => {
+  // Select all the rating containers
+  const ratingContainers = document.querySelectorAll(".ratings");
+  if (ratingContainers) {
+    ratingContainers.forEach((container) => {
+      // Get the `ul` where the stars will be rendered
+      const ratingStars = container.querySelector("ul");
+
+      // Get the rating value from the `p` element's data attribute
+      const ratingValueElement = container.querySelector(".rating-value");
+      const ratingValue = Math.round(
+        parseFloat(ratingValueElement.dataset.ratingValue)
+      );
+
+      // Clear any existing stars in the `ul`
+      ratingStars.innerHTML = "";
+
+      // Generate stars dynamically based on the rating value
+      for (let i = 1; i <= 5; i++) {
+        const star = document.createElement("li");
+        star.innerHTML =
+          i <= ratingValue
+            ? '<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6 text-orange-400"><path d="M12 .587l3.668 7.431L23.6 9.75l-5.546 5.41L19.42 24 12 19.807 4.58 24l1.366-8.84L.4 9.75l7.932-1.732L12 .587z" /></svg>'
+            : '<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-gray-400"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 .587l3.668 7.431L23.6 9.75l-5.546 5.41L19.42 24 12 19.807 4.58 24l1.366-8.84L.4 9.75l7.932-1.732L12 .587z" /></svg>';
+        ratingStars.appendChild(star);
+      }
+    });
+  }
+});
+
+// Initialize WOW Animated
+document.addEventListener("DOMContentLoaded", function () {
+  if (WOW) {
+    new WOW().init();
+  }
+});

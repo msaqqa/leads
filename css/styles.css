@@ -1,11 +1,7 @@
+/* Global */
 :root {
-  --main-color: #ff5323;
-  --secondary-color: #a8a0a0;
-  --light-color: #fff;
-  --shadow-color: rgba(0, 0, 0, 0.2);
-  --border-color: #e0e0e0;
-  --border-radius: 5px;
-  --transition: 0.3s ease;
+  --accent-color: #ff5323;
+  --gray-color: #bdbdbd;
 }
 
 body {
@@ -15,6 +11,8 @@ body {
 .container {
   max-width: 100% !important;
 }
+
+/* Navigation */
 
 /* Hero */
 .hero-section {
@@ -53,15 +51,15 @@ body {
   z-index: 10;
 }
 .hero-section .swiper-pagination-bullet {
-  background: var(--secondary-color);
+  background: var(--gray-color);
   width: 20px;
   height: 5px;
-  border: 1px solid var(--secondary-color);
+  border: 1px solid var(--gray-color);
   border-radius: 1.5px;
 }
 .hero-section .swiper-pagination-bullet-active {
-  background-color: var(--main-color);
-  border-color: var(--main-color);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* Trust */
@@ -80,6 +78,8 @@ body {
 }
 
 /* Partners */
+
+/* Experts */
 
 /* Leads */
 .leads {
@@ -141,3 +141,5 @@ body {
 /* News */
 
 /* Questions */
+
+/* Footer */
