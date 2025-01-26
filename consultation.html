@@ -79,52 +79,50 @@
             <!-- Finances link -->
             <li class="mb-4 lg:mb-0 mr-2 pr-0 lg:ps-2" data-twe-nav-item-ref>
               <a
-                class="text-base font-medium text-neutral-700 transition duration-200 hover:text-neutral-950 hover:ease-in-out active:text-neutral-950 motion-reduce:transition-none"
-                aria-current="page"
                 href="#!"
                 data-twe-nav-link-ref
+                data-aria-current="false"
+                class="text-base font-medium text-neutral-900 transition duration-200 hover:text-blue-500 hover:ease-in-out data-[aria-current='page']:text-blue-500"
                 >Finances</a
               >
             </li>
             <!-- Insurance Link -->
-            <li
-              class="mb-4 lg:mb-0 mr-2 pr-0 lg:ps-2"
-              data-twe-nav-item-ref
-              data-twe-animation-init="true"
-              data-twe-animation-reset="true"
-              data-twe-animation="[slide-right_1s_ease-in-out]"
-            >
+            <li class="mb-4 lg:mb-0 mr-2 pr-0 lg:ps-2" data-twe-nav-item-ref>
               <a
-                class="text-base font-medium text-neutral-700 transition duration-200 hover:text-neutral-950 hover:ease-in-out active:text-neutral-950 motion-reduce:transition-none"
+                class="text-base font-medium text-neutral-900 transition duration-200 hover:text-blue-500 hover:ease-in-out [aria-current='page']:text-blue-500"
                 href="#!"
                 data-twe-nav-link-ref
+                data-aria-current="false"
                 >Insurance</a
               >
             </li>
             <!-- Diversified link -->
             <li class="mb-4 lg:mb-0 mr-2 pr-0 lg:ps-2" data-twe-nav-item-ref>
               <a
-                class="text-base font-medium text-neutral-700 transition duration-200 hover:text-neutral-950 hover:ease-in-out active:text-neutral-950 motion-reduce:transition-none"
+                class="text-base font-medium text-neutral-900 transition duration-200 hover:text-blue-500 hover:ease-in-out data-[aria-current='page']:text-blue-500"
                 href="#!"
                 data-twe-nav-link-ref
+                data-aria-current="false"
                 >Diversified</a
               >
             </li>
             <!-- Consultation link -->
             <li class="mb-4 lg:mb-0 mr-2 pr-0 lg:ps-2" data-twe-nav-item-ref>
               <a
-                class="text-base font-medium text-neutral-700 transition duration-200 hover:text-neutral-950 hover:ease-in-out active active:text-blue-500 motion-reduce:transition-none"
-                href="#!"
+                class="text-base font-medium text-neutral-900 transition duration-200 hover:text-blue-500 hover:ease-in-out data-[aria-current='page']:text-blue-500"
+                href="/consultation.html"
                 data-twe-nav-link-ref
+                data-aria-current="page"
                 >Consultation</a
               >
             </li>
             <!-- News link -->
             <li class="mb-4 lg:mb-0 mr-2 pr-0 lg:ps-2" data-twe-nav-item-ref>
               <a
-                class="text-base font-medium text-neutral-700 transition duration-200 hover:text-neutral-950 hover:ease-in-out active:text-neutral-950 motion-reduce:transition-none"
+                class="text-base font-medium text-neutral-900 transition duration-200 hover:text-blue-500 hover:ease-in-out data-[aria-current='page']:text-blue-500"
                 href="#!"
                 data-twe-nav-link-ref
+                data-aria-current="false"
                 >News</a
               >
             </li>
@@ -140,7 +138,7 @@
     </nav>
 
     <!-- Header -->
-    <div class="relative h-screen pt-[90px] flex justify-center items-center">
+    <div class="relative h-[400px] mt-[90px] flex justify-center items-center">
       <div class="container">
         <div
           class="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -149,7 +147,7 @@
           "
         ></div>
         <div class="relative z-10">
-          <h1 class="text-white text-6xl font-bold text-center">
+          <h1 class="text-white text-4xl md:text-6xl font-bold text-center">
             Consultation
           </h1>
         </div>
@@ -216,411 +214,510 @@
         <div
           class="consultant-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          <a
-            class="block consultant-card relative h-[530px] rounded-2xl overflow-hidden transition opacity-95 hover:opacity-100 [&>img]:hover:scale-105"
-            href="#!"
-            data-category="medical"
-          >
-            <img
-              class="absolute top-0 left-0 w-full h-full transition"
-              src="./images/consultants/consultant-01.png"
-              alt="consultant image"
-            />
-            <div class="absolute top-0 left-0 w-full p-4 flex justify-between">
-              <span class="bg-neutral-100 capitalize rounded-full px-6 py-2"
-                >medical</span
+          <div class="consultant-card" data-category="medical">
+            <div class="card-img relative w-full h-[413px] overflow-hidden">
+              <a href="#!">
+                <img
+                  class="w-full h-full"
+                  src="./images/consultants/consultant-01.png"
+                  alt="consultant image"
+                />
+              </a>
+              <div
+                class="absolute top-0 left-0 w-full p-5 flex justify-between"
               >
-              <span
-                class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.8"
-                  stroke="currentColor"
-                  class="w-5 h-5"
+                <span class="bg-neutral-100 capitalize rounded-full px-6 py-2"
+                  >medical</span
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                  />
-                </svg>
-              </span>
-            </div>
-            <div
-              class="card-text absolute bottom-0 left-0 w-full h-1/2 p-6 bg-gradient-to-b from-transparent to-neutral-900 flex flex-col justify-end"
-            >
-              <h4 class="text-2xl font-semibold text-white mb-3">
-                What is health insurance?
-              </h4>
-              <p class="text-base font-normal text-gray-300">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </a>
-          <a
-            class="block consultant-card relative h-[530px] rounded-2xl overflow-hidden transition opacity-95 hover:opacity-100 [&>img]:hover:scale-105"
-            href="#!"
-            data-category="energy"
-          >
-            <img
-              class="absolute top-0 left-0 w-full h-full transition"
-              src="./images/consultants/consultant-02.png"
-              alt="consultant image"
-            />
-            <div class="absolute top-0 left-0 w-full p-4 flex justify-between">
-              <span class="bg-neutral-100 capitalize rounded-full px-6 py-2"
-                >Energy</span
-              >
-              <span
-                class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.8"
-                  stroke="currentColor"
-                  class="w-5 h-5"
+                <a
+                  href="#!"
+                  class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center transition hover:bg-neutral-200"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                  />
-                </svg>
-              </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.8"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
-            <div
-              class="card-text absolute bottom-0 left-0 w-full h-1/2 p-6 bg-gradient-to-b from-transparent to-neutral-900 flex flex-col justify-end"
-            >
-              <h4 class="text-2xl font-semibold text-white mb-3">
-                Is solar energy economical?
-              </h4>
-              <p class="text-base font-normal text-gray-300">
+            <div class="card-text mt-4">
+              <div class="flex items-center gap-2 text-gray-500 mb-4">
+                <span>18 jan 2025</span>
+                <span
+                  class="inline-block w-2 h-2 rounded-full bg-gray-400"
+                ></span>
+                <span> 10 mins read </span>
+              </div>
+              <a href="#!">
+                <h4 class="text-2xl font-semibold mb-3">
+                  What is health insurance?
+                </h4>
+              </a>
+
+              <p class="text-base text-gray-500 line-clamp-3">
                 With Leads, I had easy, personalized private health insurance,
                 and was well taken care of.
               </p>
             </div>
-          </a>
-          <a
-            class="block consultant-card relative h-[530px] rounded-2xl overflow-hidden transition opacity-95 hover:opacity-100 [&>img]:hover:scale-105"
-            href="#!"
-            data-category="financial"
-          >
-            <img
-              class="absolute top-0 left-0 w-full h-full transition"
-              src="./images/consultants/consultant-03.png"
-              alt="consultant image"
-            />
-            <div class="absolute top-0 left-0 w-full p-4 flex justify-between">
-              <span class="bg-neutral-100 capitalize rounded-full px-6 py-2"
-                >financial</span
+          </div>
+          <div class="consultant-card" data-category="energy">
+            <div class="card-img relative w-full h-[413px] overflow-hidden">
+              <a href="#!">
+                <img
+                  class="w-full h-full"
+                  src="./images/consultants/consultant-02.png"
+                  alt="consultant image"
+                />
+              </a>
+              <div
+                class="absolute top-0 left-0 w-full p-5 flex justify-between"
               >
-              <span
-                class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.8"
-                  stroke="currentColor"
-                  class="w-5 h-5"
+                <span class="bg-neutral-100 capitalize rounded-full px-6 py-2"
+                  >energy</span
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                  />
-                </svg>
-              </span>
+                <a
+                  href="#!"
+                  class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center transition hover:bg-neutral-200"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.8"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
-            <div
-              class="card-text absolute bottom-0 left-0 w-full h-1/2 p-6 bg-gradient-to-b from-transparent to-neutral-900 flex flex-col justify-end"
-            >
-              <h4 class="text-2xl font-semibold text-white mb-3">
-                How safe is fixed deposit?
-              </h4>
-              <p class="text-base font-normal text-gray-300">
+            <div class="card-text mt-4">
+              <div class="flex items-center gap-2 text-gray-500 mb-4">
+                <span>18 jan 2025</span>
+                <span
+                  class="inline-block w-2 h-2 rounded-full bg-gray-400"
+                ></span>
+                <span> 10 mins read </span>
+              </div>
+              <a href="#!">
+                <h4 class="text-2xl font-semibold mb-3">
+                  What is health insurance?
+                </h4>
+              </a>
+
+              <p class="text-base text-gray-500 line-clamp-3">
                 With Leads, I had easy, personalized private health insurance,
                 and was well taken care of.
               </p>
             </div>
-          </a>
-          <a
-            class="block consultant-card relative h-[530px] rounded-2xl overflow-hidden transition opacity-95 hover:opacity-100 [&>img]:hover:scale-105"
-            href="#!"
-            data-category="energy"
-          >
-            <img
-              class="absolute top-0 left-0 w-full h-full transition"
-              src="./images/consultants/consultant-04.png"
-              alt="consultant image"
-            />
-            <div class="absolute top-0 left-0 w-full p-4 flex justify-between">
-              <span class="bg-neutral-100 capitalize rounded-full px-6 py-2"
-                >Energy</span
+          </div>
+          <div class="consultant-card" data-category="financial">
+            <div class="card-img relative w-full h-[413px] overflow-hidden">
+              <a href="#!">
+                <img
+                  class="w-full h-full"
+                  src="./images/consultants/consultant-03.png"
+                  alt="consultant image"
+                />
+              </a>
+              <div
+                class="absolute top-0 left-0 w-full p-5 flex justify-between"
               >
-              <span
-                class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.8"
-                  stroke="currentColor"
-                  class="w-5 h-5"
+                <span class="bg-neutral-100 capitalize rounded-full px-6 py-2"
+                  >financial</span
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                  />
-                </svg>
-              </span>
+                <a
+                  href="#!"
+                  class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center transition hover:bg-neutral-200"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.8"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
-            <div
-              class="card-text absolute bottom-0 left-0 w-full h-1/2 p-6 bg-gradient-to-b from-transparent to-neutral-900 flex flex-col justify-end"
-            >
-              <h4 class="text-2xl font-semibold text-white mb-3">
-                How safe is fixed deposit?
-              </h4>
-              <p class="text-base font-normal text-gray-300">
+            <div class="card-text mt-4">
+              <div class="flex items-center gap-2 text-gray-500 mb-4">
+                <span>18 jan 2025</span>
+                <span
+                  class="inline-block w-2 h-2 rounded-full bg-gray-400"
+                ></span>
+                <span> 10 mins read </span>
+              </div>
+              <a href="#!">
+                <h4 class="text-2xl font-semibold mb-3">
+                  What is health insurance?
+                </h4>
+              </a>
+
+              <p class="text-base text-gray-500 line-clamp-3">
                 With Leads, I had easy, personalized private health insurance,
                 and was well taken care of.
               </p>
             </div>
-          </a>
-          <a
-            class="block consultant-card relative h-[530px] rounded-2xl overflow-hidden transition opacity-95 hover:opacity-100 [&>img]:hover:scale-105"
-            href="#!"
-            data-category="financial"
-          >
-            <img
-              class="absolute top-0 left-0 w-full h-full transition"
-              src="./images/consultants/consultant-05.png"
-              alt="consultant image"
-            />
-            <div class="absolute top-0 left-0 w-full p-4 flex justify-between">
-              <span class="bg-neutral-100 capitalize rounded-full px-6 py-2"
-                >financial</span
+          </div>
+          <div class="consultant-card" data-category="energy">
+            <div class="card-img relative w-full h-[413px] overflow-hidden">
+              <a href="#!">
+                <img
+                  class="w-full h-full"
+                  src="./images/consultants/consultant-04.png"
+                  alt="consultant image"
+                />
+              </a>
+              <div
+                class="absolute top-0 left-0 w-full p-5 flex justify-between"
               >
-              <span
-                class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.8"
-                  stroke="currentColor"
-                  class="w-5 h-5"
+                <span class="bg-neutral-100 capitalize rounded-full px-6 py-2"
+                  >Energy</span
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                  />
-                </svg>
-              </span>
+                <a
+                  href="#!"
+                  class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center transition hover:bg-neutral-200"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.8"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
-            <div
-              class="card-text absolute bottom-0 left-0 w-full h-1/2 p-6 bg-gradient-to-b from-transparent to-neutral-900 flex flex-col justify-end"
-            >
-              <h4 class="text-2xl font-semibold text-white mb-3">
-                How safe is fixed deposit?
-              </h4>
-              <p class="text-base font-normal text-gray-300">
+            <div class="card-text mt-4">
+              <div class="flex items-center gap-2 text-gray-500 mb-4">
+                <span>18 jan 2025</span>
+                <span
+                  class="inline-block w-2 h-2 rounded-full bg-gray-400"
+                ></span>
+                <span> 10 mins read </span>
+              </div>
+              <a href="#!">
+                <h4 class="text-2xl font-semibold mb-3">
+                  What is health insurance?
+                </h4>
+              </a>
+
+              <p class="text-base text-gray-500 line-clamp-3">
                 With Leads, I had easy, personalized private health insurance,
                 and was well taken care of.
               </p>
             </div>
-          </a>
-          <a
-            class="block consultant-card relative h-[530px] rounded-2xl overflow-hidden transition opacity-95 hover:opacity-100 [&>img]:hover:scale-105"
-            href="#!"
-            data-category="medical"
-          >
-            <img
-              class="absolute top-0 left-0 w-full h-full transition"
-              src="./images/consultants/consultant-06.png"
-              alt="consultant image"
-            />
-            <div class="absolute top-0 left-0 w-full p-4 flex justify-between">
-              <span class="bg-neutral-100 capitalize rounded-full px-6 py-2"
-                >medical</span
+          </div>
+          <div class="consultant-card" data-category="financial">
+            <div class="card-img relative w-full h-[413px] overflow-hidden">
+              <a href="#!">
+                <img
+                  class="w-full h-full"
+                  src="./images/consultants/consultant-05.png"
+                  alt="consultant image"
+                />
+              </a>
+              <div
+                class="absolute top-0 left-0 w-full p-5 flex justify-between"
               >
-              <span
-                class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.8"
-                  stroke="currentColor"
-                  class="w-5 h-5"
+                <span class="bg-neutral-100 capitalize rounded-full px-6 py-2"
+                  >financial</span
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                  />
-                </svg>
-              </span>
-            </div>
-            <div
-              class="card-text absolute bottom-0 left-0 w-full h-1/2 p-6 bg-gradient-to-b from-transparent to-neutral-900 flex flex-col justify-end"
-            >
-              <h4 class="text-2xl font-semibold text-white mb-3">
-                What is health insurance?
-              </h4>
-              <p class="text-base font-normal text-gray-300">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </a>
-          <a
-            class="block consultant-card relative h-[530px] rounded-2xl overflow-hidden transition opacity-95 hover:opacity-100 [&>img]:hover:scale-105"
-            href="#!"
-            data-category="energy"
-          >
-            <img
-              class="absolute top-0 left-0 w-full h-full transition"
-              src="./images/consultants/consultant-07.png"
-              alt="consultant image"
-            />
-            <div class="absolute top-0 left-0 w-full p-4 flex justify-between">
-              <span class="bg-neutral-100 capitalize rounded-full px-6 py-2"
-                >Energy</span
-              >
-              <span
-                class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.8"
-                  stroke="currentColor"
-                  class="w-5 h-5"
+                <a
+                  href="#!"
+                  class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center transition hover:bg-neutral-200"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                  />
-                </svg>
-              </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.8"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
-            <div
-              class="card-text absolute bottom-0 left-0 w-full h-1/2 p-6 bg-gradient-to-b from-transparent to-neutral-900 flex flex-col justify-end"
-            >
-              <h4 class="text-2xl font-semibold text-white mb-3">
-                How safe is fixed deposit?
-              </h4>
-              <p class="text-base font-normal text-gray-300">
+            <div class="card-text mt-4">
+              <div class="flex items-center gap-2 text-gray-500 mb-4">
+                <span>18 jan 2025</span>
+                <span
+                  class="inline-block w-2 h-2 rounded-full bg-gray-400"
+                ></span>
+                <span> 10 mins read </span>
+              </div>
+              <a href="#!">
+                <h4 class="text-2xl font-semibold mb-3">
+                  What is health insurance?
+                </h4>
+              </a>
+
+              <p class="text-base text-gray-500 line-clamp-3">
                 With Leads, I had easy, personalized private health insurance,
                 and was well taken care of.
               </p>
             </div>
-          </a>
-          <a
-            class="block consultant-card relative h-[530px] rounded-2xl overflow-hidden transition opacity-95 hover:opacity-100 [&>img]:hover:scale-105"
-            href="#!"
-            data-category="financial"
-          >
-            <img
-              class="absolute top-0 left-0 w-full h-full transition"
-              src="./images/consultants/consultant-08.png"
-              alt="consultant image"
-            />
-            <div class="absolute top-0 left-0 w-full p-4 flex justify-between">
-              <span class="bg-neutral-100 capitalize rounded-full px-6 py-2"
-                >financial</span
+          </div>
+          <div class="consultant-card" data-category="medical">
+            <div class="card-img relative w-full h-[413px] overflow-hidden">
+              <a href="#!">
+                <img
+                  class="w-full h-full"
+                  src="./images/consultants/consultant-06.png"
+                  alt="consultant image"
+                />
+              </a>
+              <div
+                class="absolute top-0 left-0 w-full p-5 flex justify-between"
               >
-              <span
-                class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.8"
-                  stroke="currentColor"
-                  class="w-5 h-5"
+                <span class="bg-neutral-100 capitalize rounded-full px-6 py-2"
+                  >medical</span
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                  />
-                </svg>
-              </span>
+                <a
+                  href="#!"
+                  class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center transition hover:bg-neutral-200"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.8"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
-            <div
-              class="card-text absolute bottom-0 left-0 w-full h-1/2 p-6 bg-gradient-to-b from-transparent to-neutral-900 flex flex-col justify-end"
-            >
-              <h4 class="text-2xl font-semibold text-white mb-3">
-                How safe is fixed deposit?
-              </h4>
-              <p class="text-base font-normal text-gray-300">
+            <div class="card-text mt-4">
+              <div class="flex items-center gap-2 text-gray-500 mb-4">
+                <span>18 jan 2025</span>
+                <span
+                  class="inline-block w-2 h-2 rounded-full bg-gray-400"
+                ></span>
+                <span> 10 mins read </span>
+              </div>
+              <a href="#!">
+                <h4 class="text-2xl font-semibold mb-3">
+                  What is health insurance?
+                </h4>
+              </a>
+
+              <p class="text-base text-gray-500 line-clamp-3">
                 With Leads, I had easy, personalized private health insurance,
                 and was well taken care of.
               </p>
             </div>
-          </a>
-          <a
-            class="block consultant-card relative h-[530px] rounded-2xl overflow-hidden transition opacity-95 hover:opacity-100 [&>img]:hover:scale-105"
-            href="#!"
-            data-category="medical"
-          >
-            <img
-              class="absolute top-0 left-0 w-full h-full transition"
-              src="./images/consultants/consultant-09.png"
-              alt="consultant image"
-            />
-            <div class="absolute top-0 left-0 w-full p-4 flex justify-between">
-              <span class="bg-neutral-100 capitalize rounded-full px-6 py-2"
-                >medical</span
+          </div>
+          <div class="consultant-card" data-category="energy">
+            <div class="card-img relative w-full h-[413px] overflow-hidden">
+              <a href="#!">
+                <img
+                  class="w-full h-full"
+                  src="./images/consultants/consultant-07.png"
+                  alt="consultant image"
+                />
+              </a>
+              <div
+                class="absolute top-0 left-0 w-full p-5 flex justify-between"
               >
-              <span
-                class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.8"
-                  stroke="currentColor"
-                  class="w-5 h-5"
+                <span class="bg-neutral-100 capitalize rounded-full px-6 py-2"
+                  >Energy</span
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                  />
-                </svg>
-              </span>
+                <a
+                  href="#!"
+                  class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center transition hover:bg-neutral-200"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.8"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
-            <div
-              class="card-text absolute bottom-0 left-0 w-full h-1/2 p-6 bg-gradient-to-b from-transparent to-neutral-900 flex flex-col justify-end"
-            >
-              <h4 class="text-2xl font-semibold text-white mb-3">
-                What is health insurance?
-              </h4>
-              <p class="text-base font-normal text-gray-300">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+            <div class="card-text mt-4">
+              <div class="flex items-center gap-2 text-gray-500 mb-4">
+                <span>18 jan 2025</span>
+                <span
+                  class="inline-block w-2 h-2 rounded-full bg-gray-400"
+                ></span>
+                <span> 10 mins read </span>
+              </div>
+              <a href="#!">
+                <h4 class="text-2xl font-semibold mb-3">
+                  What is health insurance?
+                </h4>
+              </a>
+
+              <p class="text-base text-gray-500 line-clamp-3">
+                With Leads, I had easy, personalized private health insurance,
+                and was well taken care of.
               </p>
             </div>
-          </a>
+          </div>
+          <div class="consultant-card" data-category="financial">
+            <div class="card-img relative w-full h-[413px] overflow-hidden">
+              <a href="#!">
+                <img
+                  class="w-full h-full"
+                  src="./images/consultants/consultant-08.png"
+                  alt="consultant image"
+                />
+              </a>
+              <div
+                class="absolute top-0 left-0 w-full p-5 flex justify-between"
+              >
+                <span class="bg-neutral-100 capitalize rounded-full px-6 py-2"
+                  >financial</span
+                >
+                <a
+                  href="#!"
+                  class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center transition hover:bg-neutral-200"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.8"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="card-text mt-4">
+              <div class="flex items-center gap-2 text-gray-500 mb-4">
+                <span>18 jan 2025</span>
+                <span
+                  class="inline-block w-2 h-2 rounded-full bg-gray-400"
+                ></span>
+                <span> 10 mins read </span>
+              </div>
+              <a href="#!">
+                <h4 class="text-2xl font-semibold mb-3">
+                  What is health insurance?
+                </h4>
+              </a>
+
+              <p class="text-base text-gray-500 line-clamp-3">
+                With Leads, I had easy, personalized private health insurance,
+                and was well taken care of.
+              </p>
+            </div>
+          </div>
+          <div class="consultant-card" data-category="medical">
+            <div class="card-img relative w-full h-[413px] overflow-hidden">
+              <a href="#!">
+                <img
+                  class="w-full h-full"
+                  src="./images/consultants/consultant-09.png"
+                  alt="consultant image"
+                />
+              </a>
+              <div
+                class="absolute top-0 left-0 w-full p-5 flex justify-between"
+              >
+                <span class="bg-neutral-100 capitalize rounded-full px-6 py-2"
+                  >medical</span
+                >
+                <a
+                  href="#!"
+                  class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center transition hover:bg-neutral-200"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.8"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="card-text mt-4">
+              <div class="flex items-center gap-2 text-gray-500 mb-4">
+                <span>18 jan 2025</span>
+                <span
+                  class="inline-block w-2 h-2 rounded-full bg-gray-400"
+                ></span>
+                <span> 10 mins read </span>
+              </div>
+              <a href="#!">
+                <h4 class="text-2xl font-semibold mb-3">
+                  What is health insurance?
+                </h4>
+              </a>
+
+              <p class="text-base text-gray-500 line-clamp-3">
+                With Leads, I had easy, personalized private health insurance,
+                and was well taken care of.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
