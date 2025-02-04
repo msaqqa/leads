@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leads</title>
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -14,12 +13,13 @@
       href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css"
     />
     <script src="https://cdn.tailwindcss.com/3.3.0"></script>
-    <link rel="stylesheet" href="./css/styles.css" />
     <script src="./js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="text-neutral-900">
     <!-- Navigation -->
@@ -134,424 +134,220 @@
       </div>
     </nav>
 
-    <!-- Header -->
-    <div
-      class="relative h-[400px] mt-[60px] lg:mt-[90px] flex justify-center items-center"
-    >
+    <div class="main-section py-16 mt-[60px] lg:mt-[90px]">
       <div class="container">
-        <div
-          class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style="
-            background-image: url('./images/backgrounds/consultation-bg.png');
-          "
-        ></div>
-        <div class="relative z-10">
-          <h1 class="text-white text-4xl md:text-6xl font-bold text-center">
-            Consultation
-          </h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-y-5 md:gap-x-5">
+          <div class="col-span-2">
+            <!-- breadcrumb -->
+            <nav class="w-full mb-20">
+              <ol class="list-reset flex">
+                <li>
+                  <a
+                    href="./consultation.html"
+                    class="text-gray-500 capitalize transition ease-in-out hover:text-blue-500"
+                    >Consultation</a
+                  >
+                </li>
+                <li>
+                  <span class="text-gray-500 mx-5">></span>
+                </li>
+                <li class="capitalize">Monocrystalline Modules ...</li>
+              </ol>
+            </nav>
+            <div class="module-text mb-10">
+              <h1 class="text-4xl font-bold mb-5">
+                Monocrystalline Modules: Definition and Function
+              </h1>
+              <p class="text-lg text-gray-500">
+                Community Solar is shattering the way people think about
+                accessing renewable energy. Since community solar legislation
+                first passed in the United States, 43 different states have
+                deployed at least one community solar facility. As its
+                popularity
+              </p>
+            </div>
+            <div class="module-details">
+              <span
+                class="inline-block bg-neutral-100 capitalize rounded-full px-6 py-2 mb-5"
+                >medical</span
+              >
+              <div class="flex items-center gap-2 text-gray-500 mb-4">
+                <span>18 jan 2025</span>
+                <span
+                  class="inline-block w-2 h-2 rounded-full bg-gray-400"
+                ></span>
+                <span> 10 mins read </span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="rounded-2xl"
+              src="./images/consultation-details.png"
+              alt="consultation-details"
+            />
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Cards  -->
-    <div class="py-16">
+    <div class="content-tabs-section pb-16">
       <div class="container">
-        <h2
-          class="text-2xl lg:text-4xl font-semibold text-neutral-900 capitalize mb-8"
-        >
-          Consultations about the services we provide
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-y-5 md:gap-x-5">
+          <!--Tabs navigation-->
+          <div class="order-1 md:order-2">
+            <div
+              class="bg-neutral-100 flex justify-start items-center gap-4 rounded-2xl px-8 py-6 mb-8"
+            >
+              <img
+                src="https://tecdn.b-cdn.net/img/new/avatars/5.webp"
+                class="mb-4 w-20 rounded-full"
+                alt="Avatar"
+              />
+              <div>
+                <h5 class="text-xl font-medium leading-tight mb-2">Sabine M</h5>
+                <p class="text-gray-500">42 Jahre alt, aus Berlin</p>
+              </div>
+            </div>
+            <div class="bg-neutral-100 p-6 rounded-2xl">
+              <h4 class="text-2xl font-semibold">Contents:</h4>
+              <ul
+                class="flex list-none flex-col flex-wrap ps-0"
+                role="tablist"
+                data-twe-nav-ref
+              >
+                <li role="presentation" class="flex-grow">
+                  <a
+                    href="#tabs-01"
+                    class="my-2 block border-b pb-3.5 pt-4 text-lg font-medium capitalize leading-tight data-[twe-nav-active]:text-blue-500"
+                    data-twe-toggle="pill"
+                    data-twe-target="#tabs-01"
+                    data-twe-nav-active
+                    role="tab"
+                    aria-controls="tabs-01"
+                    aria-selected="true"
+                    >What is a hydraulic switch?</a
+                  >
+                </li>
+                <li role="presentation" class="flex-grow">
+                  <a
+                    href="#tabs-02"
+                    class="my-2 block border-b pb-3.5 pt-4 text-lg font-medium capitalize leading-tight data-[twe-nav-active]:text-blue-500"
+                    data-twe-toggle="pill"
+                    data-twe-target="#tabs-02"
+                    role="tab"
+                    aria-controls="tabs-02"
+                    aria-selected="false"
+                    >Function of a hydraulic switch</a
+                  >
+                </li>
+                <li role="presentation" class="flex-grow">
+                  <a
+                    href="#tabs-03"
+                    class="my-2 block border-b pb-3.5 pt-4 text-lg font-medium capitalize leading-tight data-[twe-nav-active]:text-blue-500 last:border-none"
+                    data-twe-toggle="pill"
+                    data-twe-target="#tabs-03"
+                    role="tab"
+                    aria-controls="tabs-03"
+                    aria-selected="false"
+                    >Function of a hydraulic switch</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--Tabs content-->
+          <div class="my-2 col-span-2 order-2 md:order-1">
+            <div
+              class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+              id="tabs-01"
+              role="tabpanel"
+              aria-labelledby="tabs-home-tab03"
+              data-twe-tab-active
+            >
+              <div class="mb-10">
+                <h2 class="text-2xl font-semibold mb-8">
+                  What is a hydraulic switch?
+                </h2>
+                <p class="tex-lg text-pretty">
+                  Solar energy is one of the most important renewable energy
+                  sources that helps factories achieve sustainability and reduce
+                  operating costs. With the increasing demand for clean and
+                  environmentally friendly energy sources, solar energy has
+                  become an ideal choice for many industries. This article
+                  reviews the most prominent advantages of using solar energy in
+                  factories.
+                </p>
+              </div>
+              <div class="mb-10">
+                <h2 class="text-2xl font-semibold mb-8">System highlights:</h2>
+                <p class="tex-lg text-pretty mb-5">
+                  The hydraulic separator is a central component of efficient
+                  heating technology. It plays a key role in environmentally
+                  friendly heat pumps. Its job is to hydraulically separate the
+                  heat generator circuit from the heating circuit.
+                </p>
+                <h3 class="text-lg font-medium mb-5">Reduce energy costs:</h3>
+                <ul class="list-disc list-inside text-lg space-y-5">
+                  <li class="flex items-start gap-x-2">
+                    <span class="shrink-0 text-2xl leading-tight">•</span>
+                    <span class="flex-1">
+                      In the optimal state, when the volume flows are balanced,
+                      the heat reaches almost all of the heating circuit. This
+                      maximizes the efficiency of the system.
+                    </span>
+                  </li>
+                  <li class="flex items-start gap-x-2">
+                    <span class="shrink-0 text-2xl leading-tight">•</span>
+                    <span class="flex-1">
+                      In contrast, a discrepancy in the flows leads to a
+                      reduction in efficiency. Either the heat does not arrive
+                      or unnecessary flow is mixed. This reduces the performance
+                      of the heat pump.
+                    </span>
+                  </li>
+                  <li class="flex items-start gap-x-2">
+                    <span class="shrink-0 text-2xl leading-tight">•</span>
+                    <span class="flex-1">
+                      A return flow increase caused by the mixing effect of the
+                      switch can negatively influence the COP.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+              id="tabs-02"
+              role="tabpanel"
+              aria-labelledby="tabs-profile-tab03"
+            >
+              Tab 2 content
+            </div>
+            <div
+              class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+              id="tabs-03"
+              role="tabpanel"
+              aria-labelledby="tabs-profile-tab03"
+            >
+              Tab 3 content
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pb-16">
+      <div class="container">
+        <h2 class="text-3xl font-semibold capitalize mb-12">
+          More Consultation articles
         </h2>
-        <!--Tabs navigation-->
-        <ul
-          class="list-none flex flex-row flex-wrap gap-3 pl-5 mb-8"
-          role="tablist"
-          data-twe-nav-ref
-        >
-          <li role="presentation">
-            <a
-              href="#tabs-general"
-              class="inline-block bg-white text-neutral-900 rounded-full w-32 text-center py-3 capitalize border border-neutral-900 transition-colors hover:bg-neutral-100 data-[twe-nav-active]:bg-neutral-900 data-[twe-nav-active]:text-white"
-              role="tab"
-              aria-selected="true"
-              data-filter="general"
-              data-twe-nav-active
-              >general</a
-            >
-          </li>
-          <li role="presentation">
-            <a
-              href="#tabs-services"
-              class="inline-block bg-white text-neutral-900 rounded-full w-32 text-center py-3 capitalize border border-neutral-900 transition-colors hover:bg-neutral-100 data-[twe-nav-active]:bg-neutral-900 data-[twe-nav-active]:text-white"
-              role="tab"
-              aria-selected="false"
-              data-filter="medical"
-              >medical</a
-            >
-          </li>
-          <li role="presentation">
-            <a
-              href="#tabs-dashboard"
-              class="inline-block bg-white text-neutral-900 rounded-full w-32 text-center py-3 capitalize border border-neutral-900 transition-colors hover:bg-neutral-100 data-[twe-nav-active]:bg-neutral-900 data-[twe-nav-active]:text-white"
-              role="tab"
-              aria-selected="false"
-              data-filter="energy"
-              >Energy</a
-            >
-          </li>
-          <li role="presentation">
-            <a
-              href="#tabs-privacy"
-              class="inline-block bg-white text-neutral-900 rounded-full w-32 text-center py-3 capitalize border border-neutral-900 transition-colors hover:bg-neutral-100 data-[twe-nav-active]:bg-neutral-900 data-[twe-nav-active]:text-white"
-              role="tab"
-              aria-selected="false"
-              data-filter="financial"
-              >financial</a
-            >
-          </li>
-        </ul>
-        <!--Tabs content-->
         <div
           class="consultant-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16"
         >
-          <div class="consultant-card" data-category="medical">
-            <div class="card-img relative w-full h-[530px] overflow-hidden">
-              <a href="./consultation-details.html">
-                <img
-                  class="w-full h-full"
-                  src="./images/consultants/consultant-01.png"
-                  alt="consultant image"
-                />
-              </a>
-              <div
-                class="absolute top-0 left-0 w-full p-5 flex justify-between"
-              >
-                <span class="bg-neutral-100 capitalize rounded-full px-6 py-2"
-                  >medical</span
-                >
-                <a
-                  href="./consultation-details.html"
-                  class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center transition hover:bg-blue-500 [&>svg]:hover:text-white"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.8"
-                    stroke="currentColor"
-                    class="w-5 h-5 transition"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="card-text mt-4">
-              <div class="flex items-center gap-2 text-gray-500 mb-4">
-                <span>18 jan 2025</span>
-                <span
-                  class="inline-block w-2 h-2 rounded-full bg-gray-400"
-                ></span>
-                <span> 10 mins read </span>
-              </div>
-              <a href="./consultation-details.html">
-                <h4 class="text-2xl font-semibold mb-3">
-                  What is health insurance?
-                </h4>
-              </a>
-
-              <p class="text-base text-gray-500 line-clamp-3">
-                With Leads, I had easy, personalized private health insurance,
-                and was well taken care of.
-              </p>
-            </div>
-          </div>
           <div class="consultant-card" data-category="energy">
             <div class="card-img relative w-full h-[530px] overflow-hidden">
-              <a href="./consultation-details.html">
-                <img
-                  class="w-full h-full"
-                  src="./images/consultants/consultant-02.png"
-                  alt="consultant image"
-                />
-              </a>
-              <div
-                class="absolute top-0 left-0 w-full p-5 flex justify-between"
-              >
-                <span class="bg-neutral-100 capitalize rounded-full px-6 py-2"
-                  >energy</span
-                >
-                <a
-                  href="./consultation-details.html"
-                  class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center transition hover:bg-blue-500 [&>svg]:hover:text-white"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.8"
-                    stroke="currentColor"
-                    class="w-5 h-5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="card-text mt-4">
-              <div class="flex items-center gap-2 text-gray-500 mb-4">
-                <span>18 jan 2025</span>
-                <span
-                  class="inline-block w-2 h-2 rounded-full bg-gray-400"
-                ></span>
-                <span> 10 mins read </span>
-              </div>
-              <a href="./consultation-details.html">
-                <h4 class="text-2xl font-semibold mb-3">
-                  What is health insurance?
-                </h4>
-              </a>
-
-              <p class="text-base text-gray-500 line-clamp-3">
-                With Leads, I had easy, personalized private health insurance,
-                and was well taken care of.
-              </p>
-            </div>
-          </div>
-          <div class="consultant-card" data-category="financial">
-            <div class="card-img relative w-full h-[530px] overflow-hidden">
-              <a href="./consultation-details.html">
-                <img
-                  class="w-full h-full"
-                  src="./images/consultants/consultant-03.png"
-                  alt="consultant image"
-                />
-              </a>
-              <div
-                class="absolute top-0 left-0 w-full p-5 flex justify-between"
-              >
-                <span class="bg-neutral-100 capitalize rounded-full px-6 py-2"
-                  >financial</span
-                >
-                <a
-                  href="./consultation-details.html"
-                  class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center transition hover:bg-blue-500 [&>svg]:hover:text-white"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.8"
-                    stroke="currentColor"
-                    class="w-5 h-5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="card-text mt-4">
-              <div class="flex items-center gap-2 text-gray-500 mb-4">
-                <span>18 jan 2025</span>
-                <span
-                  class="inline-block w-2 h-2 rounded-full bg-gray-400"
-                ></span>
-                <span> 10 mins read </span>
-              </div>
-              <a href="./consultation-details.html">
-                <h4 class="text-2xl font-semibold mb-3">
-                  What is health insurance?
-                </h4>
-              </a>
-
-              <p class="text-base text-gray-500 line-clamp-3">
-                With Leads, I had easy, personalized private health insurance,
-                and was well taken care of.
-              </p>
-            </div>
-          </div>
-          <div class="consultant-card" data-category="energy">
-            <div class="card-img relative w-full h-[530px] overflow-hidden">
-              <a href="./consultation-details.html">
-                <img
-                  class="w-full h-full"
-                  src="./images/consultants/consultant-04.png"
-                  alt="consultant image"
-                />
-              </a>
-              <div
-                class="absolute top-0 left-0 w-full p-5 flex justify-between"
-              >
-                <span class="bg-neutral-100 capitalize rounded-full px-6 py-2"
-                  >Energy</span
-                >
-                <a
-                  href="./consultation-details.html"
-                  class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center transition hover:bg-blue-500 [&>svg]:hover:text-white"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.8"
-                    stroke="currentColor"
-                    class="w-5 h-5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="card-text mt-4">
-              <div class="flex items-center gap-2 text-gray-500 mb-4">
-                <span>18 jan 2025</span>
-                <span
-                  class="inline-block w-2 h-2 rounded-full bg-gray-400"
-                ></span>
-                <span> 10 mins read </span>
-              </div>
-              <a href="./consultation-details.html">
-                <h4 class="text-2xl font-semibold mb-3">
-                  What is health insurance?
-                </h4>
-              </a>
-
-              <p class="text-base text-gray-500 line-clamp-3">
-                With Leads, I had easy, personalized private health insurance,
-                and was well taken care of.
-              </p>
-            </div>
-          </div>
-          <div class="consultant-card" data-category="financial">
-            <div class="card-img relative w-full h-[530px] overflow-hidden">
-              <a href="./consultation-details.html">
-                <img
-                  class="w-full h-full"
-                  src="./images/consultants/consultant-05.png"
-                  alt="consultant image"
-                />
-              </a>
-              <div
-                class="absolute top-0 left-0 w-full p-5 flex justify-between"
-              >
-                <span class="bg-neutral-100 capitalize rounded-full px-6 py-2"
-                  >financial</span
-                >
-                <a
-                  href="./consultation-details.html"
-                  class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center transition hover:bg-blue-500 [&>svg]:hover:text-white"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.8"
-                    stroke="currentColor"
-                    class="w-5 h-5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="card-text mt-4">
-              <div class="flex items-center gap-2 text-gray-500 mb-4">
-                <span>18 jan 2025</span>
-                <span
-                  class="inline-block w-2 h-2 rounded-full bg-gray-400"
-                ></span>
-                <span> 10 mins read </span>
-              </div>
-              <a href="./consultation-details.html">
-                <h4 class="text-2xl font-semibold mb-3">
-                  What is health insurance?
-                </h4>
-              </a>
-
-              <p class="text-base text-gray-500 line-clamp-3">
-                With Leads, I had easy, personalized private health insurance,
-                and was well taken care of.
-              </p>
-            </div>
-          </div>
-          <div class="consultant-card" data-category="medical">
-            <div class="card-img relative w-full h-[530px] overflow-hidden">
-              <a href="./consultation-details.html">
-                <img
-                  class="w-full h-full"
-                  src="./images/consultants/consultant-06.png"
-                  alt="consultant image"
-                />
-              </a>
-              <div
-                class="absolute top-0 left-0 w-full p-5 flex justify-between"
-              >
-                <span class="bg-neutral-100 capitalize rounded-full px-6 py-2"
-                  >medical</span
-                >
-                <a
-                  href="./consultation-details.html"
-                  class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center transition hover:bg-blue-500 [&>svg]:hover:text-white"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.8"
-                    stroke="currentColor"
-                    class="w-5 h-5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="card-text mt-4">
-              <div class="flex items-center gap-2 text-gray-500 mb-4">
-                <span>18 jan 2025</span>
-                <span
-                  class="inline-block w-2 h-2 rounded-full bg-gray-400"
-                ></span>
-                <span> 10 mins read </span>
-              </div>
-              <a href="./consultation-details.html">
-                <h4 class="text-2xl font-semibold mb-3">
-                  What is health insurance?
-                </h4>
-              </a>
-
-              <p class="text-base text-gray-500 line-clamp-3">
-                With Leads, I had easy, personalized private health insurance,
-                and was well taken care of.
-              </p>
-            </div>
-          </div>
-          <div class="consultant-card" data-category="energy">
-            <div class="card-img relative w-full h-[530px] overflow-hidden">
-              <a href="./consultation-details.html">
+              <a href="#!">
                 <img
                   class="w-full h-full"
                   src="./images/consultants/consultant-07.png"
@@ -565,7 +361,7 @@
                   >Energy</span
                 >
                 <a
-                  href="./consultation-details.html"
+                  href="#!"
                   class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center transition hover:bg-blue-500 [&>svg]:hover:text-white"
                 >
                   <svg
@@ -593,7 +389,7 @@
                 ></span>
                 <span> 10 mins read </span>
               </div>
-              <a href="./consultation-details.html">
+              <a href="#!">
                 <h4 class="text-2xl font-semibold mb-3">
                   What is health insurance?
                 </h4>
@@ -607,7 +403,7 @@
           </div>
           <div class="consultant-card" data-category="financial">
             <div class="card-img relative w-full h-[530px] overflow-hidden">
-              <a href="./consultation-details.html">
+              <a href="#!">
                 <img
                   class="w-full h-full"
                   src="./images/consultants/consultant-08.png"
@@ -621,7 +417,7 @@
                   >financial</span
                 >
                 <a
-                  href="./consultation-details.html"
+                  href="#!"
                   class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center transition hover:bg-blue-500 [&>svg]:hover:text-white"
                 >
                   <svg
@@ -649,7 +445,7 @@
                 ></span>
                 <span> 10 mins read </span>
               </div>
-              <a href="./consultation-details.html">
+              <a href="#!">
                 <h4 class="text-2xl font-semibold mb-3">
                   What is health insurance?
                 </h4>
@@ -663,7 +459,7 @@
           </div>
           <div class="consultant-card" data-category="medical">
             <div class="card-img relative w-full h-[530px] overflow-hidden">
-              <a href="./consultation-details.html">
+              <a href="#!">
                 <img
                   class="w-full h-full"
                   src="./images/consultants/consultant-09.png"
@@ -677,7 +473,7 @@
                   >medical</span
                 >
                 <a
-                  href="./consultation-details.html"
+                  href="#!"
                   class="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center transition hover:bg-blue-500 [&>svg]:hover:text-white"
                 >
                   <svg
@@ -705,7 +501,7 @@
                 ></span>
                 <span> 10 mins read </span>
               </div>
-              <a href="./consultation-details.html">
+              <a href="#!">
                 <h4 class="text-2xl font-semibold mb-3">
                   What is health insurance?
                 </h4>
@@ -959,36 +755,5 @@
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="./js/main.js"></script>
-    <!-- JavaScript for Stepper Functionality -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const tabs = document.querySelectorAll("[data-filter]");
-        const cards = document.querySelectorAll(".consultant-card");
-
-        tabs.forEach((tab) => {
-          tab.addEventListener("click", () => {
-            const filter = tab.getAttribute("data-filter");
-
-            // Set active class for tabs
-            tabs.forEach((t) => {
-              console.log("t", t);
-              t.removeAttribute("data-twe-nav-active");
-            });
-            console.log("tab", tab);
-            tab.setAttribute("data-twe-nav-active", "");
-
-            // Filter cards
-            cards.forEach((card) => {
-              const category = card.getAttribute("data-category");
-              if (filter === "general" || category === filter) {
-                card.classList.remove("hidden");
-              } else {
-                card.classList.add("hidden");
-              }
-            });
-          });
-        });
-      });
-    </script>
   </body>
 </html>
