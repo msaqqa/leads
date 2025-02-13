@@ -135,352 +135,90 @@
     </nav>
 
     <!-- Hero -->
-    <div id="hero" class="hero-section pt-24 lg:pt-36 pb-8">
+    <div
+      id="hero"
+      class="hero-section pt-24 pb-8 lg:pt-36 mt-[60px] lg:mt-[90px]"
+    >
       <div class="container">
-        <!--Tabs navigation-->
-        <ul
-          class="w-full md:w-1/2 flex flex-row flex-wrap gap-3 mb-6 lg:mb-12 md:pr-12 wow animate__animated animate__fadeInDown"
-          role="tablist"
-          data-twe-nav-ref
-          id="categoriesTabs"
-        >
-          <li role="presentation">
-            <a
-              href="#tabs-solar"
-              class="flex gap-1.5 items-center bg-white/40 text-neutral-900 capitalize rounded-full p-1.5 pr-5 transition-colors hover:bg-blue-200 data-[twe-nav-active]:bg-blue-500 data-[twe-nav-active]:text-white"
-              data-twe-toggle="pill"
-              data-twe-target="#tabs-solar"
-              role="tab"
-              aria-controls="tabs-solar"
-              aria-selected="true"
-              data-twe-tab-active
-            >
-              <img
-                class="bg-blue-50 w-8 lg:w-10 rounded-full isolate px-1.5 py-2"
-                src="images/svg/solarSystem.svg"
-                alt=""
-              />
-              <span>Solar</span>
-            </a>
-          </li>
-          <li role="presentation">
-            <a
-              href="#tabs-heat"
-              class="flex gap-1.5 items-center bg-white/40 text-neutral-900 capitalize rounded-full p-1.5 pr-5 transition-colors hover:bg-blue-200 data-[twe-nav-active]:bg-blue-500 data-[twe-nav-active]:text-white"
-              data-twe-toggle="pill"
-              data-twe-target="#tabs-heat"
-              role="tab"
-              aria-controls="tabs-heat"
-              aria-selected="false"
-              ><img
-                class="bg-blue-50 w-8 lg:w-10 rounded-full isolate px-1.5 py-2"
-                src="images/svg/HeatPump.svg"
-                alt=""
-              />
-              <span>Heat</span>
-            </a>
-          </li>
-          <li role="presentation">
-            <a
-              href="#tabs-deposits"
-              class="flex gap-1.5 items-center bg-white/40 text-neutral-900 capitalize rounded-full p-1.5 pr-5 transition-colors hover:bg-blue-200 data-[twe-nav-active]:bg-blue-500 data-[twe-nav-active]:text-white"
-              data-twe-toggle="pill"
-              data-twe-target="#tabs-deposits"
-              role="tab"
-              aria-controls="tabs-deposits"
-              aria-selected="false"
-              ><img
-                class="bg-blue-50 w-8 lg:w-10 rounded-full isolate px-1.5 py-2"
-                src="images/svg/FixedAndDailyDeposits.svg"
-                alt=""
-              />
-              <span>Deposits</span>
-            </a>
-          </li>
-        </ul>
         <div
-          class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-          id="tabs-solar"
-          role="tabpanel"
-          aria-labelledby="tabs-solar-tab"
-          data-twe-tab-active
+          class="flex flex-col md:flex-row justify-between items-start gap-12"
         >
           <div
-            class="flex flex-col md:flex-row justify-between items-start gap-12"
+            class="w-full md:w-1/2 wow animate__animated animate__fadeInLeft"
           >
-            <div
-              class="w-full md:w-1/2 wow animate__animated animate__fadeInLeft"
+            <h1
+              class="text-4xl leading-snug lg:text-6xl lg:leading-snug font-bold capitalize text-gray-900 mb-5"
             >
-              <h1
-                class="text-4xl leading-snug lg:text-6xl lg:leading-snug font-bold capitalize text-gray-900 mb-5"
-              >
-                <span class="text-accent">Solar Energy</span><br />
-                is worth it again!
-              </h1>
-              <p
-                class="text-base lg:text-lg lg:leading-loose text-stone-900 text-pretty mb-5"
-              >
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
-              </p>
-              <button
-                type="button"
-                class="bg-blue-500 text-white rounded-full px-7 py-5 border border-blue-500 transition hover:bg-white hover:text-blue-500 hover:-translate-y-1 [&>svg]:text-white [&>svg]:hover:translate-x-2 [&>svg]:hover:text-blue-500"
-              >
-                Start Comparison
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  class="w-5 h-5 inline-block ml-1 transition"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div
-              class="w-full md:w-1/2 md:-mt-[73px] lg:-mt-[105px] rounded-2xl pb-6 wow animate__animated animate__fadeInRight"
+              <span class="text-accent">Solar Energy</span><br />
+              is worth it again!
+            </h1>
+            <p
+              class="text-base lg:text-lg lg:leading-loose text-stone-900 text-pretty mb-5"
             >
-              <!-- Swiper Container -->
-              <div
-                class="swiper hero-swiper w-full pb-8"
-                data-swiper-name="solar-swiper"
+              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
+            </p>
+            <button
+              type="button"
+              class="bg-blue-500 text-white rounded-full px-7 py-5 border border-blue-500 transition hover:bg-white hover:text-blue-500 hover:-translate-y-1 [&>svg]:text-white [&>svg]:hover:translate-x-2 [&>svg]:hover:text-blue-500"
+            >
+              Start Comparison
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-5 h-5 inline-block ml-1 transition"
               >
-                <!-- Wrapper for slides -->
-                <div class="swiper-wrapper">
-                  <div
-                    class="swiper-slide flex justify-start md:justify-center"
-                  >
-                    <div class="image-wrpper w-[510px]">
-                      <img
-                        class="w-full h-full aspect-square rounded-2xl"
-                        src="./images/solar-01.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="swiper-slide flex justify-start md:justify-center"
-                  >
-                    <div class="image-wrpper w-[510px]">
-                      <img
-                        class="w-full h-full aspect-square rounded-2xl"
-                        src="./images/solar-02.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="swiper-slide flex justify-start md:justify-center"
-                  >
-                    <div class="image-wrpper w-[510px]">
-                      <img
-                        class="w-full h-full aspect-square rounded-2xl"
-                        src="./images/solar-03.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </button>
           </div>
-        </div>
-        <div
-          class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-          id="tabs-heat"
-          role="tabpanel"
-          aria-labelledby="tabs-heat-tab"
-        >
           <div
-            class="flex flex-col md:flex-row justify-between items-start gap-12"
+            class="w-full md:w-1/2 md:-mt-[73px] lg:-mt-[105px] rounded-2xl wow animate__animated animate__fadeInRight"
           >
+            <!-- Swiper Container -->
             <div
-              class="w-full md:w-1/2 wow animate__animated animate__fadeInLeft"
+              class="swiper hero-swiper w-full"
+              data-swiper-name="solar-swiper"
             >
-              <h1
-                class="text-4xl leading-snug lg:text-6xl lg:leading-snug font-bold capitalize text-gray-900 mb-5"
-              >
-                <span class="text-accent">Heat</span><br />
-                is worth it again!
-              </h1>
-              <p
-                class="text-base lg:text-lg lg:leading-loose text-stone-900 text-pretty mb-5"
-              >
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
-              </p>
-              <button
-                type="button"
-                class="flex items-center bg-blue-500 text-white rounded-full px-7 py-5 border border-blue-500 transition hover:bg-white hover:text-blue-500 hover:-translate-y-1 [&>svg]:text-white [&>svg]:hover:translate-x-2 [&>svg]:hover:text-blue-500"
-              >
-                Start Comparison
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  class="w-5 h-5 inline-block ml-1 transition"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div
-              class="w-full md:w-1/2 md:-mt-[73px] lg:-mt-[105px] rounded-2xl pb-6 wow animate__animated animate__fadeInRight"
-            >
-              <!-- Swiper Container -->
-              <div
-                class="swiper hero-swiper w-full pb-8"
-                data-swiper-name="heat-swiper"
-              >
-                <!-- Wrapper for slides -->
-                <div class="swiper-wrapper">
-                  <div
-                    class="swiper-slide flex justify-start md:justify-center"
-                  >
-                    <div class="image-wrpper w-[510px]">
-                      <img
-                        class="w-full h-full aspect-square rounded-2xl bg-gray-300"
-                        src="./images/heat-01.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="swiper-slide flex justify-start md:justify-center"
-                  >
-                    <div class="image-wrpper w-[510px]">
-                      <img
-                        class="w-full h-full aspect-square rounded-2xl bg-gray-300"
-                        src="./images/heat-02.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="swiper-slide flex justify-start md:justify-center"
-                  >
-                    <div class="image-wrpper w-[510px]">
-                      <img
-                        class="w-full h-full aspect-square rounded-2xl bg-gray-300"
-                        src="./images/heat-03.png"
-                        alt=""
-                      />
-                    </div>
+              <!-- Wrapper for slides -->
+              <div class="swiper-wrapper">
+                <div class="swiper-slide flex justify-start md:justify-center">
+                  <div class="image-wrpper w-[510px]">
+                    <img
+                      class="w-full h-full aspect-square rounded-2xl"
+                      src="./images/solar-01.png"
+                      alt=""
+                    />
                   </div>
                 </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-          id="tabs-deposits"
-          role="tabpanel"
-          aria-labelledby="tabs-deposits-tab"
-        >
-          <div
-            class="flex flex-col md:flex-row justify-between items-start gap-12"
-          >
-            <div
-              class="w-full md:w-1/2 wow animate__animated animate__fadeInLeft"
-            >
-              <h1
-                class="text-4xl leading-snug lg:text-6xl lg:leading-snug font-bold capitalize text-gray-900 mb-5"
-              >
-                <span class="text-accent">Deposits</span><br />
-                is worth it again!
-              </h1>
-              <p
-                class="text-base lg:text-lg lg:leading-loose text-stone-900 text-pretty mb-5"
-              >
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
-              </p>
-              <button
-                type="button"
-                class="flex items-center bg-blue-500 text-white rounded-full px-7 py-5 border border-blue-500 transition hover:bg-white hover:text-blue-500 hover:-translate-y-1 [&>svg]:text-white [&>svg]:hover:translate-x-2 [&>svg]:hover:text-blue-500"
-              >
-                Start Comparison
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  class="w-5 h-5 inline-block ml-1 transition"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div
-              class="w-full md:w-1/2 md:-mt-[73px] lg:-mt-[105px] rounded-2xl pb-6 wow animate__animated animate__fadeInRight"
-            >
-              <!-- Swiper Container -->
-              <div
-                class="swiper hero-swiper w-full pb-8"
-                data-swiper-name="deposits-swiper"
-              >
-                <!-- Wrapper for slides -->
-                <div class="swiper-wrapper">
-                  <div
-                    class="swiper-slide flex justify-start md:justify-center"
-                  >
-                    <div class="image-wrpper w-[510px]">
-                      <img
-                        class="w-full h-full aspect-square rounded-2xl bg-gray-300"
-                        src="./images/deposits-01.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="swiper-slide flex justify-start md:justify-center"
-                  >
-                    <div class="image-wrpper w-[510px]">
-                      <img
-                        class="w-full h-full aspect-square rounded-2xl bg-gray-300"
-                        src="./images/deposits-02.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="swiper-slide flex justify-start md:justify-center"
-                  >
-                    <div class="image-wrpper w-[510px]">
-                      <img
-                        class="w-full h-full aspect-square rounded-2xl bg-gray-300"
-                        src="./images/deposits-03.png"
-                        alt=""
-                      />
-                    </div>
+                <div class="swiper-slide flex justify-start md:justify-center">
+                  <div class="image-wrpper w-[510px]">
+                    <img
+                      class="w-full h-full aspect-square rounded-2xl"
+                      src="./images/solar-02.png"
+                      alt=""
+                    />
                   </div>
                 </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="swiper-slide flex justify-start md:justify-center">
+                  <div class="image-wrpper w-[510px]">
+                    <img
+                      class="w-full h-full aspect-square rounded-2xl"
+                      src="./images/solar-03.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
               </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -549,7 +287,7 @@
               </h3>
               <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
                 <div
-                  class="option-card h-[300px] flex flex-col justify-center items-center bg-white rounded-xl px-5 md:px-12 transition hover:bg-blue-100 cursor-pointer border-2 border-gray-300 rounded-lg p-4 text-center hover:border-blue-500"
+                  class="option-card h-[300px] flex flex-col justify-center items-center bg-white rounded-xl px-5 md:px-12 transition hover:bg-blue-100 cursor-pointer border-2 border-gray-300 rounded-lg p-4 text-center hover:border-blue-500 data-[selected='true']:bg-blue-100 data-[selected='true']:border-blue-500"
                   data-step="energyType"
                   data-answer="q1-01"
                 >
@@ -561,7 +299,7 @@
                   <h4>gable roof</h4>
                 </div>
                 <div
-                  class="option-card h-[300px] flex flex-col justify-center items-center bg-white rounded-xl px-5 md:px-12 transition hover:bg-blue-100 cursor-pointer border-2 border-gray-300 rounded-lg p-4 text-center hover:border-blue-500"
+                  class="option-card h-[300px] flex flex-col justify-center items-center bg-white rounded-xl px-5 md:px-12 transition hover:bg-blue-100 cursor-pointer border-2 border-gray-300 rounded-lg p-4 text-center hover:border-blue-500 data-[selected='true']:bg-blue-100 data-[selected='true']:border-blue-500"
                   data-step="energyType"
                   data-answer="q1-02"
                 >
@@ -573,7 +311,7 @@
                   <h4>gable roof</h4>
                 </div>
                 <div
-                  class="option-card h-[300px] flex flex-col justify-center items-center bg-white rounded-xl px-5 md:px-12 transition hover:bg-blue-100 cursor-pointer border-2 border-gray-300 rounded-lg p-4 text-center hover:border-blue-500"
+                  class="option-card h-[300px] flex flex-col justify-center items-center bg-white rounded-xl px-5 md:px-12 transition hover:bg-blue-100 cursor-pointer border-2 border-gray-300 rounded-lg p-4 text-center hover:border-blue-500 data-[selected='true']:bg-blue-100 data-[selected='true']:border-blue-500"
                   data-step="energyType"
                   data-answer="q1-03"
                 >
@@ -585,7 +323,7 @@
                   <h4>gable roof</h4>
                 </div>
                 <div
-                  class="option-card h-[300px] flex flex-col justify-center items-center bg-white rounded-xl px-5 md:px-12 transition hover:bg-blue-100 cursor-pointer border-2 border-gray-300 rounded-lg p-4 text-center hover:border-blue-500"
+                  class="option-card h-[300px] flex flex-col justify-center items-center bg-white rounded-xl px-5 md:px-12 transition hover:bg-blue-100 cursor-pointer border-2 border-gray-300 rounded-lg p-4 text-center hover:border-blue-500 data-[selected='true']:bg-blue-100 data-[selected='true']:border-blue-500"
                   data-step="energyType"
                   data-answer="q1-04"
                 >
@@ -606,7 +344,7 @@
               </h3>
               <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
                 <div
-                  class="option-card h-[300px] flex flex-col justify-center items-center bg-white rounded-xl px-5 md:px-12 transition hover:bg-blue-100 cursor-pointer border-2 border-gray-300 rounded-lg p-4 text-center hover:border-blue-500"
+                  class="option-card h-[300px] flex flex-col justify-center items-center bg-white rounded-xl px-5 md:px-12 transition hover:bg-blue-100 cursor-pointer border-2 border-gray-300 rounded-lg p-4 text-center hover:border-blue-500 data-[selected='true']:bg-blue-100 data-[selected='true']:border-blue-500"
                   data-step="solarPlace"
                   data-answer="q1-01"
                 >
@@ -618,7 +356,7 @@
                   <h4>single-family/two-family house</h4>
                 </div>
                 <div
-                  class="option-card h-[300px] flex flex-col justify-center items-center bg-white rounded-xl px-5 md:px-12 transition hover:bg-blue-100 cursor-pointer border-2 border-gray-300 rounded-lg p-4 text-center hover:border-blue-500"
+                  class="option-card h-[300px] flex flex-col justify-center items-center bg-white rounded-xl px-5 md:px-12 transition hover:bg-blue-100 cursor-pointer border-2 border-gray-300 rounded-lg p-4 text-center hover:border-blue-500 data-[selected='true']:bg-blue-100 data-[selected='true']:border-blue-500"
                   data-step="solarPlace"
                   data-answer="q1-02"
                 >
@@ -630,7 +368,7 @@
                   <h4>apartment building</h4>
                 </div>
                 <div
-                  class="option-card h-[300px] flex flex-col justify-center items-center bg-white rounded-xl px-5 md:px-12 transition hover:bg-blue-100 cursor-pointer border-2 border-gray-300 rounded-lg p-4 text-center hover:border-blue-500"
+                  class="option-card h-[300px] flex flex-col justify-center items-center bg-white rounded-xl px-5 md:px-12 transition hover:bg-blue-100 cursor-pointer border-2 border-gray-300 rounded-lg p-4 text-center hover:border-blue-500 data-[selected='true']:bg-blue-100 data-[selected='true']:border-blue-500"
                   data-step="solarPlace"
                   data-answer="q1-03"
                 >
@@ -642,7 +380,7 @@
                   <h4>company building</h4>
                 </div>
                 <div
-                  class="option-card h-[300px] flex flex-col justify-center items-center bg-white rounded-xl px-5 md:px-12 transition hover:bg-blue-100 cursor-pointer border-2 border-gray-300 rounded-lg p-4 text-center hover:border-blue-500"
+                  class="option-card h-[300px] flex flex-col justify-center items-center bg-white rounded-xl px-5 md:px-12 transition hover:bg-blue-100 cursor-pointer border-2 border-gray-300 rounded-lg p-4 text-center hover:border-blue-500 data-[selected='true']:bg-blue-100 data-[selected='true']:border-blue-500"
                   data-step="solarPlace"
                   data-answer="q1-04"
                 >
@@ -851,14 +589,14 @@
             <button
               type="button"
               id="prevBtn"
-              class="w-36 h-12 bg-neutral-100 rounded-lg transition hover:bg-neutral-200"
+              class="w-36 h-12 bg-neutral-100 border border-neutral-100 rounded-lg transition hover:bg-transparent hover:border-gray-400"
             >
               Prevois
             </button>
             <button
               type="button"
               id="nextBtn"
-              class="w-36 h-12 bg-blue-500 text-white rounded-lg transition hover:bg-blue-600"
+              class="w-36 h-12 bg-blue-500 text-white border border-blue-500 rounded-lg transition hover:bg-transparent hover:text-blue-500"
               data-twe-ripple-init
               data-twe-ripple-color="light"
             >
@@ -867,12 +605,561 @@
             <button
               type="submit"
               id="submitBtn"
-              class="hidden w-36 h-12 bg-green-800 text-white rounded-lg transition hover:bg-green-900"
+              class="hidden w-36 h-12 bg-green-700 text-white border border-green-700 rounded-lg transition hover:bg-transparent hover:text-green-700"
             >
               Submit
             </button>
           </div>
         </form>
+      </div>
+    </div>
+
+    <!-- Leads -->
+    <div class="leads py-16">
+      <div
+        class="container flex flex-col md:flex-row justify-between gap-x-5 gap-y-8 wow animate__animated animate__fadeInUp"
+      >
+        <div class="leads-info w-full md:w-1/2">
+          <h2 class="text-2xl lg:text-3xl font-semibold capitalize mb-5">
+            Leads: Smart, personal and reliably affordable.
+          </h2>
+          <p
+            class="text-base lg:text-lg font-normal text-neutral-900 text-pretty"
+          >
+            With us you will find the best insurance, financing and investment
+            that is perfectly tailored to your needs. Our experts compare the
+            best offers on the market for you an d support you in your decision.
+          </p>
+        </div>
+        <div class="leads-features w-full md:w-1/2 lg:w-1/3">
+          <ul class="list-style-none mb-8">
+            <li class="pl-12 text-lg font-medium mb-5">
+              100% free and non-binding.
+            </li>
+            <li class="pl-12 text-lg font-medium mb-5">
+              No contribution obligation.
+            </li>
+            <li class="pl-12 text-lg font-medium mb-5">
+              Without obligation to contribute.
+            </li>
+            <li class="pl-12 text-lg font-medium mb-5">
+              Expert advice by telephone.
+            </li>
+          </ul>
+          <img src="./images//leads-features.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="testimonials relative bg-white py-16">
+      <div class="container wow animate__animated animate__fadeInUp">
+        <h2
+          class="text-2xl lg:text-3xl font-semibold capitalize mb-8 lg:mb-16 text-center"
+        >
+          What do the users say?
+        </h2>
+      </div>
+      <div class="swiper testimonials-swiper static container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonial-card bg-neutral-100 rounded-2xl px-5 py-8">
+              <h4 class="text-base font-semibold capitalize mb-4">
+                Great service
+              </h4>
+              <p
+                class="text-base font-normal text-neutral-600 line-clamp-3 mb-4"
+              >
+                With Leads, I had easy, personalized private health insurance,
+                and was well taken care of.
+              </p>
+              <div class="ratings flex justify-start gap-x-2.5 mb-8">
+                <ul class="flex justify-start gap-x-1"></ul>
+                <p
+                  class="rating-value text-base font-semibold"
+                  data-rating-value="4.2"
+                >
+                  4.2
+                </p>
+              </div>
+              <div class="flex justify-between items-center">
+                <div>
+                  <h6 class="text-sm font-medium mb-2">Sabine M</h6>
+                  <p class="text-xs font-normal text-gray-500">
+                    42 Jahre alt, aus Berlin
+                  </p>
+                </div>
+                <img src="./images/svg/quote.svg" alt="quote icon" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-card bg-neutral-100 rounded-2xl px-5 py-8">
+              <h4 class="text-base font-semibold capitalize mb-4">
+                Great service
+              </h4>
+              <p
+                class="text-base font-normal text-neutral-600 line-clamp-3 mb-4"
+              >
+                With Leads, I had easy, personalized private health insurance,
+                and was well taken care of.
+              </p>
+              <div class="ratings flex justify-start gap-x-2.5 mb-8">
+                <ul class="flex justify-start gap-x-1"></ul>
+                <p
+                  class="rating-value text-base font-semibold"
+                  data-rating-value="3"
+                >
+                  3.4
+                </p>
+              </div>
+              <div class="flex justify-between items-center">
+                <div>
+                  <h6 class="text-sm font-medium mb-2">Sabine M</h6>
+                  <p class="text-xs font-normal text-gray-500">
+                    42 Jahre alt, aus Berlin
+                  </p>
+                </div>
+                <img src="./images/svg/quote.svg" alt="quote icon" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-card bg-neutral-100 rounded-2xl px-5 py-8">
+              <h4 class="text-base font-semibold capitalize mb-4">
+                Great service
+              </h4>
+              <p
+                class="text-base font-normal text-neutral-600 line-clamp-3 mb-4"
+              >
+                With Leads, I had easy, personalized private health insurance,
+                and was well taken care of.
+              </p>
+              <div class="ratings flex justify-start gap-x-2.5 mb-8">
+                <ul class="flex justify-start gap-x-1"></ul>
+                <p
+                  class="rating-value text-base font-semibold"
+                  data-rating-value="4.8"
+                >
+                  5
+                </p>
+              </div>
+              <div class="flex justify-between items-center">
+                <div>
+                  <h6 class="text-sm font-medium mb-2">Sabine M</h6>
+                  <p
+                    class="text-xs font-normal text-gray-500"
+                    data-rating-value="2"
+                  >
+                    42 Jahre alt, aus Berlin
+                  </p>
+                </div>
+                <img src="./images/svg/quote.svg" alt="quote icon" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-card bg-neutral-100 rounded-2xl px-5 py-8">
+              <h4 class="text-base font-semibold capitalize mb-4">
+                Great service
+              </h4>
+              <p
+                class="text-base font-normal text-neutral-600 line-clamp-3 mb-4"
+              >
+                With Leads, I had easy, personalized private health insurance,
+                and was well taken care of.
+              </p>
+              <div class="ratings flex justify-start gap-x-2.5 mb-8">
+                <ul class="flex justify-start gap-x-1"></ul>
+                <p
+                  class="rating-value text-base font-semibold"
+                  data-rating-value="4.1"
+                >
+                  4.1
+                </p>
+              </div>
+              <div class="flex justify-between items-center">
+                <div>
+                  <h6 class="text-sm font-medium mb-2">Sabine M</h6>
+                  <p class="text-xs font-normal text-gray-500">
+                    42 Jahre alt, aus Berlin
+                  </p>
+                </div>
+                <img src="./images/svg/quote.svg" alt="quote icon" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Counter -->
+        <div class="absolute bottom-7 left-1/2 -translate-x-1/2">
+          <span class="current-slide"></span> /
+          <span class="total-slides"></span>
+        </div>
+        <!-- Navigation -->
+        <div class="swiper-navigation">
+          <div class="swiper-button-next"></div>
+          <!-- Scrollbar -->
+          <div class="swiper-scrollbar"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Questions -->
+    <div class="questions bg-white py-16">
+      <div class="container wow animate__animated animate__fadeInUp">
+        <div class="w-full md:w-3/4 mx-auto text-center">
+          <h2
+            class="text-xl md:text-2xl lg:text-3xl font-semibold capitalize mb-5"
+          >
+            Frequently asked questions
+          </h2>
+          <p
+            class="text-base lg:text-xl font-medium text-gray-500 text-pretty mb-12"
+          >
+            These are the most commonly asked questions about Leads. Can't find
+            what you're looking for?
+            <span class="underline">Chat to our friendly team!</span>
+          </p>
+        </div>
+        <div class="flex flex-col md:flex-row md:gap-x-14 lg:gap-x-16 gap-y-8">
+          <div class="w-full md:w-1/2">
+            <!--Tabs navigation-->
+            <ul
+              class="list-none flex flex-row flex-wrap gap-3 pl-5 mb-8"
+              role="tablist"
+              data-twe-nav-ref
+            >
+              <li role="presentation">
+                <a
+                  href="#tabs-general"
+                  class="inline-block bg-white text-neutral-900 rounded-full w-32 text-center py-3 capitalize border border-neutral-900 transition-colors hover:bg-neutral-100 data-[twe-nav-active]:bg-neutral-900 data-[twe-nav-active]:text-white"
+                  data-twe-toggle="pill"
+                  data-twe-target="#tabs-general"
+                  data-twe-nav-active
+                  role="tab"
+                  aria-controls="tabs-general"
+                  aria-selected="true"
+                  >General</a
+                >
+              </li>
+              <li role="presentation">
+                <a
+                  href="#tabs-services"
+                  class="inline-block bg-white text-neutral-900 rounded-full w-32 text-center py-3 capitalize border border-neutral-900 transition-colors hover:bg-neutral-100 data-[twe-nav-active]:bg-neutral-900 data-[twe-nav-active]:text-white"
+                  data-twe-toggle="pill"
+                  data-twe-target="#tabs-services"
+                  role="tab"
+                  aria-controls="tabs-services"
+                  aria-selected="false"
+                  >Services</a
+                >
+              </li>
+              <li role="presentation">
+                <a
+                  href="#tabs-dashboard"
+                  class="inline-block bg-white text-neutral-900 rounded-full w-32 text-center py-3 capitalize border border-neutral-900 transition-colors hover:bg-neutral-100 data-[twe-nav-active]:bg-neutral-900 data-[twe-nav-active]:text-white"
+                  data-twe-toggle="pill"
+                  data-twe-target="#tabs-dashboard"
+                  role="tab"
+                  aria-controls="tabs-dashboard"
+                  aria-selected="false"
+                  >Dashboard</a
+                >
+              </li>
+              <li role="presentation">
+                <a
+                  href="#tabs-privacy"
+                  class="inline-block bg-white text-neutral-900 rounded-full w-32 text-center py-3 capitalize border border-neutral-900 transition-colors hover:bg-neutral-100 data-[twe-nav-active]:bg-neutral-900 data-[twe-nav-active]:text-white"
+                  data-twe-toggle="pill"
+                  data-twe-target="#tabs-privacy"
+                  role="tab"
+                  aria-controls="tabs-privacy"
+                  aria-selected="false"
+                  >Privacy</a
+                >
+              </li>
+            </ul>
+            <!--Tabs content-->
+            <div class="mb-5">
+              <div
+                class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                id="tabs-general"
+                role="tabpanel"
+                aria-labelledby="tabs-general-tab"
+                data-twe-tab-active
+              >
+                <div id="accordionGeneral">
+                  <div class="">
+                    <h2 id="headingOne">
+                      <button
+                        class="group relative flex w-full items-center bg-white text-neutral-900 text-lg md:text-2xl font-semibold rounded-t-2xl p-5 transition-colors [&:not([data-twe-collapse-collapsed])]:bg-neutral-100"
+                        type="button"
+                        data-twe-collapse-init
+                        data-twe-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        <span
+                          class="me-6 h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                            />
+                          </svg>
+                        </span>
+                        What do we do?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="!visible"
+                      data-twe-collapse-item
+                      data-twe-collapse-show
+                      aria-labelledby="headingOne"
+                      data-twe-parent="#accordionGeneral"
+                    >
+                      <div
+                        class="bg-white rounded-b-2xl p-5 pl-14 pt-0 transition-colors [&:not([data-twe-collapse-collapsed])]:bg-neutral-100"
+                      >
+                        We provide an innovative platform for price comparison,
+                        helping you find the best options and prices
+                        effortlessly.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="">
+                    <h2 class="mb-0" id="headingTwo">
+                      <button
+                        class="group relative flex w-full items-center bg-white text-neutral-900 text-lg md:text-2xl font-semibold rounded-t-2xl p-5 transition-colors [&:not([data-twe-collapse-collapsed])]:bg-neutral-100"
+                        type="button"
+                        data-twe-collapse-init
+                        data-twe-collapse-collapsed
+                        data-twe-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        <span
+                          class="me-6 h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                            />
+                          </svg>
+                        </span>
+                        Getting started with Leads!
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="!visible hidden"
+                      data-twe-collapse-item
+                      aria-labelledby="headingTwo"
+                      data-twe-parent="#accordionGeneral"
+                    >
+                      <div
+                        class="bg-white rounded-b-2xl p-5 pl-14 pt-0 transition-colors [&:not([data-twe-collapse-collapsed])]:bg-neutral-100"
+                      >
+                        It is hidden by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="">
+                    <h2 class="accordion-header mb-0" id="headingThree">
+                      <button
+                        class="group relative flex w-full items-center bg-white text-neutral-900 text-lg md:text-2xl font-semibold rounded-t-2xl p-5 transition-colors [&:not([data-twe-collapse-collapsed])]:bg-neutral-100"
+                        type="button"
+                        data-twe-collapse-init
+                        data-twe-collapse-collapsed
+                        data-twe-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        <span
+                          class="me-6 h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                            />
+                          </svg>
+                        </span>
+                        Is the service completely free?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseThree"
+                      class="!visible hidden"
+                      data-twe-collapse-item
+                      aria-labelledby="headingThree"
+                      data-twe-parent="#accordionGeneral"
+                    >
+                      <div
+                        class="bg-white rounded-b-2xl p-5 pl-14 pt-0 transition-colors [&:not([data-twe-collapse-collapsed])]:bg-neutral-100"
+                      >
+                        It is hidden by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="">
+                    <h2 class="accordion-header mb-0" id="headingFour">
+                      <button
+                        class="group relative flex w-full items-center bg-white text-neutral-900 text-lg md:text-2xl font-semibold rounded-t-2xl p-5 transition-colors [&:not([data-twe-collapse-collapsed])]:bg-neutral-100"
+                        type="button"
+                        data-twe-collapse-init
+                        data-twe-collapse-collapsed
+                        data-twe-target="#collapseFour"
+                        aria-expanded="false"
+                        aria-controls="collapseFour"
+                      >
+                        <span
+                          class="me-6 h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                            />
+                          </svg>
+                        </span>
+                        How does support work?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseFour"
+                      class="!visible hidden"
+                      data-twe-collapse-item
+                      aria-labelledby="headingFour"
+                      data-twe-parent="#accordionGeneral"
+                    >
+                      <div
+                        class="bg-white rounded-b-2xl p-5 pl-14 pt-0 transition-colors [&:not([data-twe-collapse-collapsed])]:bg-neutral-100"
+                      >
+                        It is hidden by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="">
+                    <h2 class="accordion-header mb-0" id="headingFive">
+                      <button
+                        class="group relative flex w-full items-center bg-white text-neutral-900 text-lg md:text-2xl font-semibold rounded-t-2xl p-5 transition-colors [&:not([data-twe-collapse-collapsed])]:bg-neutral-100"
+                        type="button"
+                        data-twe-collapse-init
+                        data-twe-collapse-collapsed
+                        data-twe-target="#collapseFive"
+                        aria-expanded="false"
+                        aria-controls="collapseFive"
+                      >
+                        <span
+                          class="me-6 h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                            />
+                          </svg>
+                        </span>
+                        Do you provide tutorials?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseFive"
+                      class="!visible hidden"
+                      data-twe-collapse-item
+                      aria-labelledby="headingFive"
+                      data-twe-parent="#accordionGeneral"
+                    >
+                      <div
+                        class="bg-white rounded-b-2xl p-5 pl-14 pt-0 transition-colors [&:not([data-twe-collapse-collapsed])]:bg-neutral-100"
+                      >
+                        It is hidden by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                id="tabs-services"
+                role="tabpanel"
+                aria-labelledby="tabs-services-tab"
+              >
+                Tab 2 content
+              </div>
+              <div
+                class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                id="tabs-dashboard"
+                role="tabpanel"
+                aria-labelledby="tabs-services-tab"
+              >
+                Tab 3 content
+              </div>
+              <div
+                class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                id="tabs-privacy"
+                role="tabpanel"
+                aria-labelledby="tabs-privacy-tab"
+              >
+                Tab 4 content
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2">
+            <video class="aspect-video rounded-2xl" controls>
+              <source src="./images/instructional video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -1113,147 +1400,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="./js/main.js"></script>
     <!-- JavaScript for Stepper Functionality -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const steps = document.querySelectorAll(".step");
-        const nextBtn = document.getElementById("nextBtn");
-        const prevBtn = document.getElementById("prevBtn");
-        const submitBtn = document.getElementById("submitBtn");
-        const optionCards = document.querySelectorAll(".option-card");
-        const progressCircle = document.getElementById("progress-circle");
-        const progressText = document.getElementById("progress-text");
-        const form = document.getElementById("stepperForm");
-
-        let currentStep = 0;
-        const formData = {};
-
-        function showStep(stepIndex) {
-          steps.forEach((step, index) => {
-            step.classList.toggle("hidden", index !== stepIndex);
-          });
-
-          // Adjust button visibility
-          prevBtn.classList.toggle("hidden", stepIndex === 0);
-          nextBtn.classList.toggle("hidden", stepIndex >= steps.length - 2);
-          submitBtn.classList.toggle("hidden", stepIndex !== steps.length - 2);
-
-          // Hide all navigation buttons on the last step
-          if (stepIndex === steps.length - 1) {
-            nextBtn.classList.add("hidden");
-            submitBtn.classList.add("hidden");
-            prevBtn.classList.add("hidden");
-          }
-
-          validateStep(stepIndex);
-          updateProgress();
-        }
-
-        function validateStep(stepIndex) {
-          const currentStepElement = steps[stepIndex];
-          const inputFields = currentStepElement.querySelectorAll("input");
-
-          if (inputFields.length > 0) {
-            // Check if all input fields have values
-            const isValid = Array.from(inputFields).every(
-              (input) => input.value.trim() !== ""
-            );
-
-            if (stepIndex === steps.length - 2) {
-              // Toggle the Submit button on the second-to-last step
-              submitBtn.disabled = !isValid;
-            } else {
-              // Toggle the Next button on other steps
-              nextBtn.disabled = !isValid;
-            }
-          }
-        }
-
-        function updateProgress() {
-          const progressPercent = (currentStep / (steps.length - 1)) * 100;
-          if (progressCircle) {
-            const offset = 314 - (314 * progressPercent) / 100; // Assuming a circle circumference of 314
-            progressCircle.style.strokeDashoffset = offset;
-          }
-          if (progressText) {
-            progressText.textContent = `${Math.round(progressPercent)}%`;
-          }
-        }
-
-        // Collect input values for the current step
-        function collectInputValues(stepIndex) {
-          const currentStepElement = steps[stepIndex];
-          const inputFields = currentStepElement.querySelectorAll("input");
-
-          inputFields.forEach((input) => {
-            const name = input.getAttribute("name");
-            const value = input.value.trim();
-
-            if (name) {
-              formData[name] = value;
-            }
-          });
-        }
-
-        // Handle activity card selection
-        optionCards.forEach((card) => {
-          card.addEventListener("click", () => {
-            const stepKey = card.getAttribute("data-step");
-            const answer = card.getAttribute("data-answer");
-
-            formData[stepKey] = answer;
-
-            if (currentStep < steps.length - 1) {
-              currentStep++;
-              showStep(currentStep);
-            }
-          });
-        });
-
-        // Handle dynamic validation for input fields
-        steps.forEach((step) => {
-          const inputFields = step.querySelectorAll("input");
-          inputFields.forEach((input) => {
-            input.addEventListener("input", () => {
-              validateStep(currentStep);
-            });
-          });
-        });
-
-        // Handle Next button
-        nextBtn.addEventListener("click", () => {
-          if (currentStep < steps.length - 1) {
-            collectInputValues(currentStep); // Collect input values before moving to the next step
-            currentStep++;
-            showStep(currentStep);
-          }
-        });
-
-        // Handle Previous button
-        prevBtn.addEventListener("click", () => {
-          if (currentStep > 0) {
-            currentStep--;
-            showStep(currentStep);
-          }
-        });
-
-        // Handle Submit button
-        submitBtn.addEventListener("click", () => {
-          if (currentStep === steps.length - 2) {
-            collectInputValues(currentStep); // Collect input values on the second-to-last step
-            currentStep++;
-            showStep(currentStep);
-          }
-        });
-
-        // Handle form submission
-        form.addEventListener("submit", (e) => {
-          e.preventDefault();
-          console.log("Collected Data:", formData);
-        });
-
-        // Initialize the form
-        showStep(currentStep);
-      });
-    </script>
+    <script src="./js/stepper-form.js"></script>
   </body>
 </html>
